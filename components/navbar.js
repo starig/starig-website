@@ -19,7 +19,7 @@ import ThemeToggleButton from "../components/theme-toggle-button";
 import WorkLink from "./work-link";
 
 const LinkItem = ({href, path, children}) => {
-    const active = path == href;
+    const active = path === href;
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href}>

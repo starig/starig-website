@@ -1,7 +1,7 @@
 import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "../components/section";
 import {WorkGridItem} from "../components/grid-item";
-import pizzaThumbnail from '../public/images/react-pizza.PNG';
+import pizzaThumbnail from '../public/images/react-pizza.png';
 import tellsyThumbnail from '../public/images/tellsy.png';
 import agencyThumbnail from '../public/images/agency.png';
 import libraryThumbnail from '../public/images/library.png';
