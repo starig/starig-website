@@ -16,6 +16,7 @@ import NextLink from 'next/link';
 import Logo from "./logo";
 import {HamburgerIcon} from "@chakra-ui/icons";
 import ThemeToggleButton from "../components/theme-toggle-button";
+import WorkLink from "./work-link";
 
 const LinkItem = ({href, path, children}) => {
     const active = path == href;
@@ -62,7 +63,8 @@ const Navbar = props => {
                        mt={{base: 4, md: 0}}
                 >
                     <LinkItem href={'/works'} path={path}>Works</LinkItem>
-                    <LinkItem href={'/posts'} path={path}>Posts</LinkItem>
+                    <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
+                    <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
                     <ThemeToggleButton />
@@ -71,13 +73,16 @@ const Navbar = props => {
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
                             <MenuList>
                                 <NextLink href={'/'} passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
+                                    <MenuItem as={Link}>Homepage</MenuItem>
                                 </NextLink>
                                 <NextLink href={'/works'} passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href={'/posts'} passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                <NextLink href={'https://t.me/starig'} passHref>
+                                    <MenuItem as={Link}>Telegram</MenuItem>
+                                </NextLink>
+                                <NextLink href={'https://github.com/starig'} passHref>
+                                    <MenuItem as={Link}>GitHub</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href={'http://starig.edelen.ru'}>View Source</MenuItem>
                             </MenuList>
