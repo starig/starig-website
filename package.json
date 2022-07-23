@@ -25,7 +25,6 @@
     "build": "next build && next export",
     "prettier": "prettier -write .",
     "lint": "next lint",
-    "export": "npm run build && next export -o _static"
   },
   "eslintConfig": {
     "extends": [

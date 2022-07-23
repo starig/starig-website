@@ -36,8 +36,8 @@ const Page = () => {
                     </Heading>
                     <Paragraph>
                         Создан с помощью <BioSkill>Next.js</BioSkill> и
-                        <BioSkill> Chakra UI</BioSkill>.<br />
-                         Здесь Вы можете познакомиться со мной, как с Frontend разработчиком.
+                        <BioSkill> Chakra UI</BioSkill>.<br/>
+                        Здесь Вы можете познакомиться со мной, как с Frontend разработчиком.
                     </Paragraph>
                 </Section>
 
@@ -59,7 +59,8 @@ const Page = () => {
                     <BioSection>
                         <BioYear>В 17 лет</BioYear>
                         <BioText>
-                            Активно увлекся вёрсткой. Познакомился с CSS библиотеками (<BioSkill>Bootstrap</BioSkill> и
+                            Начал активно изучать вёрстку. Познакомился с CSS библиотеками
+                            (<BioSkill>Bootstrap</BioSkill> и
                             др.).
                             Начал работать с <BioSkill>Figma</BioSkill>/<BioSkill>Photoshop</BioSkill>/<BioSkill>Adobe
                             Xd</BioSkill>.
@@ -71,7 +72,7 @@ const Page = () => {
                             После сдачи ЕГЭ, поступил в <b>Университет ИТМО</b> в Санкт-Петербурге. На
                             факультет <b>Программная инженерия</b>, специальность <b>Нейротехнологии и
                             программирование</b>.
-                            На первом курсе университета увлёкся frontend разработкой. Начал проходить курсы
+                            На первом курсе университета занялся frontend разработкой. Начал проходить курсы
                             по <BioSkill>React</BioSkill>. Появился большой интерес к этой сфере. В октябре этого же
                             года
                             устролся верстальшиком в веб-студию в <b>Москве</b>.
@@ -80,7 +81,7 @@ const Page = () => {
                     <BioSection>
                         <BioYear>В настоящее время</BioYear>
                         <BioText>
-                            Активно изучаю <BioSkill>React</BioSkill>. Уже хорошо знаком со следующими технологиями:
+                            учу <BioSkill>React</BioSkill>. Уже хорошо знаком со следующими технологиями:
                             <SkillsList>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
                                 <li><BioSkill>React Hooks</BioSkill></li>
