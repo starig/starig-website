@@ -65,6 +65,7 @@ const Navbar = props => {
                     <LinkItem href={'/works'} path={path}>Works</LinkItem>
                     <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
                     <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
+                    <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View Source</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
                     <ThemeToggleButton />
@@ -84,7 +85,7 @@ const Navbar = props => {
                                 <NextLink href={'https://github.com/starig'} passHref>
                                     <MenuItem as={Link}>GitHub</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href={'http://starig.edelen.ru'}>View Source</MenuItem>
+                                <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View Source</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
