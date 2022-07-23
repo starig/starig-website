@@ -60,7 +60,8 @@ const Navbar = props => {
                        width={{base: 'full', md: 'auto'}}
                        alignItems="center"
                        flexGrow={1}
-                       mt={{base: 4, md: 0}}>
+                       mt={{base: 4, md: 0}}
+                >
                     <LinkItem href={'/works'} path={path}>Works</LinkItem>
                     <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
                     <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
