@@ -21,6 +21,9 @@ const Work = () => {
                             <BioSkill>React 18</BioSkill>
                         </li>
                         <li>
+                            <BioSkill>Redux-Toolkit</BioSkill>
+                        </li>
+                        <li>
                             <BioSkill>React Hooks</BioSkill>
                         </li>
                         <li>
