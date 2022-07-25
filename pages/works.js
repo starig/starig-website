@@ -45,6 +45,14 @@ const Works = () => {
                         </WorkGridItem>
                     </Section>
                     <Section>
+                        <WorkGridItem id={'react-beer'} demoUrl={`https://starig.github.io/react-beer/`} title={'React Beer'}
+                                      thumbnail={agencyThumbnail}>Тестовое задание React Beer.<br />
+                            <BioSkill> React</BioSkill>,
+                            <BioSkill> GitHub Pages</BioSkill>,
+                            <BioSkill> Redux-Toolkit</BioSkill>.
+                        </WorkGridItem>
+                    </Section>
+                    <Section>
                         <WorkGridItem id={'react-library'} demoUrl={`http://react-library.edelen.ru/`}
                                       title={'React Library'}
                                       thumbnail={libraryThumbnail}>Тестовое задание React Library.<br />
