@@ -7,6 +7,7 @@ import agencyThumbnail from '../public/images/agency.png';
 import libraryThumbnail from '../public/images/library.png';
 import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
+import beerThumbnail from '../public/images/react-beer.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
@@ -46,7 +47,7 @@ const Works = () => {
                     </Section>
                     <Section>
                         <WorkGridItem id={'react-beer'} demoUrl={`https://starig.github.io/react-beer/`} title={'React Beer'}
-                                      thumbnail={agencyThumbnail}>Тестовое задание React Beer.<br />
+                                      thumbnail={beerThumbnail}>Тестовое задание React Beer.<br />
                             <BioSkill> React</BioSkill>,
                             <BioSkill> GitHub Pages</BioSkill>,
                             <BioSkill> Redux-Toolkit</BioSkill>.
