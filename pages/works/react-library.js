@@ -1,10 +1,11 @@
-import {Badge, Container, Heading, List, ListItem} from "@chakra-ui/react";
-import {ExternalLinkIcon} from "@chakra-ui/icons";
+import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
+import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
 import {Meta, Title, WorkImage} from "../../components/work";
 import Layout from "../../components/layouts/article";
 import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
+import NextLink from "next/link";
 
 const Work = () => {
     return (
@@ -14,7 +15,7 @@ const Work = () => {
                     React Library <Badge>2022</Badge>
                 </Title>
                 <>
-                    <WorkImage src={'/images/library.png'} alt={'React Library'} />
+                    <WorkImage src={'/images/library.png'} alt={'React Library'}/>
                     <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
                     <Stack>
                         <li>
@@ -41,17 +42,25 @@ const Work = () => {
                     <ListItem>
                         <Meta>Website</Meta>
                         <WorkLink href={'http://react-library.edelen.ru/'} target="_blank">
-                            http://react-library.edelen.ru/ <ExternalLinkIcon mx={'2px'} />
+                            http://react-library.edelen.ru/ <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                     <ListItem>
                         <Meta>GitHub repository</Meta>
                         <WorkLink href={'https://github.com/starig/react-library'} target="_blank">
-                            https://github.com/starig/react-library <ExternalLinkIcon mx={'2px'} />
+                            https://github.com/starig/react-library <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                 </List>
-
+                <Box align={'center'} my={4}>
+                    <NextLink href={'/works'}>
+                        <Button leftIcon={<ChevronLeftIcon/>}
+                                bg={useColorModeValue('#F56565', '#E53E3E')}
+                                _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
+                            Вернуться назад
+                        </Button>
+                    </NextLink>
+                </Box>
             </Container>
         </Layout>
     )

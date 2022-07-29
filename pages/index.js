@@ -1,34 +1,43 @@
 import React from 'react';
-import {Box, Button, Container, Heading, Image, useColorModeValue} from "@chakra-ui/react";
+import {Box, Button, Container, Grid, GridItem, Heading, Image, useColorModeValue} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from "next/link";
-import {ChevronRightIcon} from "@chakra-ui/icons";
+import {ChevronRightIcon, EmailIcon} from "@chakra-ui/icons";
 import {BioSection, BioSkill, BioText, BioYear, SkillsList} from "../components/bio";
 import Layout from "../components/layouts/article";
+import {ContactLink} from "../components/contact-link";
+import {Email} from '../components/email';
+
 
 const Page = () => {
+
     return (
         <Layout>
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} align="center"
+                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}
+                     align="center"
                      mb={6} mt={6}>
                     Привет, Я Frontend разработчик из России!
                 </Box>
-                <Box display={{md: 'flex'}}>
-                    <Box flexGrow={1}>
+                <Grid templateColumns='repeat(2, 1fr)'>
+                    <GridItem flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             Иван Старков
                         </Heading>
                         <p>Forever Junior developer</p>
-                    </Box>
+                        <Email>
+                            <ContactLink href={'mailto:starkovivan3@gmail.com'}>
+                                starkovivan3@gmail.com <EmailIcon ml={1}/></ContactLink>
+                        </Email>
+                    </GridItem>
                     <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align={'center'}>
                         <Image borderColor={'whiteAlpha.800'} borderWidth={2} borderStyle={'solid'}
                                maxWidth={'100px'}
                                display={'inline-block'} borderRadius='full' src={'/images/starig.jpg'}
                                alt={'Profile Image'}/>
                     </Box>
-                </Box>
+                </Grid>
 
                 <Section>
                     <Heading as={'h3'} variant={'section-title'}>
@@ -107,7 +116,9 @@ const Page = () => {
                     </BioSection>
                     <Box align={'center'} my={4}>
                         <NextLink href={'/works'}>
-                            <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal'>
+                            <Button rightIcon={<ChevronRightIcon/>}
+                                    bg={useColorModeValue('#F56565', '#E53E3E')}
+                                    _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
                                 Мои работы
                             </Button>
                         </NextLink>

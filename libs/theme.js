@@ -1,5 +1,5 @@
-import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import {extendTheme} from "@chakra-ui/react";
+import {mode} from "@chakra-ui/theme-tools";
 
 const styles = {
     global: props => ({
@@ -37,7 +37,7 @@ const fonts = {
 }
 
 const colors = {
-    glassTeal: '#88ccca'
+    glassTeal: '#cc88bc'
 }
 
 const config = {
