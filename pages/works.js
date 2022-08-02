@@ -12,7 +12,92 @@ import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
-
+    const works = [
+        {
+            id: 'react-pizza',
+            demoUrl: `http://react-pizza.edelen.ru/`,
+            title: 'React Pizza',
+            thumbnail: pizzaThumbnail,
+            desc: 'React Pizza курс по ReactJS.',
+            skills: [
+                'React',
+                'TypeScript',
+                'Redux-Toolkit',
+            ]
+        },
+        {
+            id: 'tellsy',
+            demoUrl: `https://mozlabtreki.ru/galereya-marafonov/`,
+            title: 'Tellsy',
+            thumbnail: tellsyThumbnail,
+            desc: 'Коммерческий проект в веб-студии Tellsy.',
+            skills: [
+                'Wordpress',
+                'CSS',
+                'Elementor',
+            ]
+        },
+        {
+            id: 'react-agency',
+            demoUrl: `http://agency-test-task.edelen.ru/`,
+            title: 'React Agency',
+            thumbnail: agencyThumbnail,
+            desc: 'Тестовое задание Agency.',
+            skills: [
+                'React',
+                'Lazy loading',
+                'Redux-Toolkit',
+            ]
+        },
+        {
+            id: 'react-beer',
+            demoUrl: `https://starig.github.io/react-beer/`,
+            title: 'React Beer',
+            thumbnail: beerThumbnail,
+            desc: 'Тестовое задание React Beer.',
+            skills: [
+                'React',
+                'GitHub Pages',
+                'Redux-Toolkit',
+            ]
+        },
+        {
+            id: 'react-library',
+            demoUrl: `http://react-library.edelen.ru/`,
+            title: 'React Library',
+            thumbnail: libraryThumbnail,
+            desc: 'Тестовое задание React Library.',
+            skills: [
+                'React',
+                'Google Books API',
+                'Sort/Filter',
+            ]
+        },
+        {
+            id: 'react-justice',
+            demoUrl: `http://justice-crm.edelen.ru/`,
+            title: 'Justice CRM',
+            thumbnail: justiceThumbnail,
+            desc: 'Тестовое задание Justice CRM.',
+            skills: [
+                'React',
+                'React Charts',
+                'Redux',
+            ]
+        },
+        {
+            id: 'cat-pinterest',
+            demoUrl: `http://cat-pinterest.edelen.ru/`,
+            title: 'Cat Pinterest',
+            thumbnail: pinterestThumbnail,
+            desc: 'Тестовое задание Cat Pinterest.',
+            skills: [
+                'React',
+                'Lazy Loading',
+                'useContext',
+            ]
+        },
+    ]
     return (
         <Layout>
             <Container>
@@ -20,66 +105,17 @@ const Works = () => {
                     Портфолио
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                    <Section>
-                        <WorkGridItem id={'react-pizza'} demoUrl={`http://react-pizza.edelen.ru/`} title={'React Pizza'}
-                                      thumbnail={pizzaThumbnail}>React Pizza курс по ReactJS.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> TypeScript</BioSkill>,
-                            <BioSkill> Redux-Toolkit</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'tellsy'} demoUrl={`https://mozlabtreki.ru/galereya-marafonov/`}
-                                      title={'Tellsy'}
-                                      thumbnail={tellsyThumbnail}>Коммерческий проект в веб-студии Tellsy.<br />
-                            <BioSkill> Wordpress</BioSkill>,
-                            <BioSkill> CSS</BioSkill>,
-                            <BioSkill> Elementor</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'react-agency'} demoUrl={`http://agency-test-task.edelen.ru/`} title={'React Agency'}
-                                      thumbnail={agencyThumbnail}>Тестовое задание Agency.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> Lazy loading</BioSkill>,
-                            <BioSkill> Redux-Toolkit</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'react-beer'} demoUrl={`https://starig.github.io/react-beer/`} title={'React Beer'}
-                                      thumbnail={beerThumbnail}>Тестовое задание React Beer.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> GitHub Pages</BioSkill>,
-                            <BioSkill> Redux-Toolkit</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'react-library'} demoUrl={`http://react-library.edelen.ru/`}
-                                      title={'React Library'}
-                                      thumbnail={libraryThumbnail}>Тестовое задание React Library.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> Google Books API</BioSkill>,
-                            <BioSkill> Sort/Filter</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'react-justice'} demoUrl={`http://justice-crm.edelen.ru/`}
-                                      title={'Justice CRM'}
-                                      thumbnail={justiceThumbnail}>Тестовое задание Justice CRM.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> React Charts</BioSkill>,
-                            <BioSkill> Redux</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem id={'cat-pinterest'} demoUrl={`http://cat-pinterest.edelen.ru//`}
-                                      title={'Cat Pinterest'}
-                                      thumbnail={pinterestThumbnail}>Тестовое задание Cat Pinterest.<br />
-                            <BioSkill> React</BioSkill>,
-                            <BioSkill> Lazy loading</BioSkill>,
-                            <BioSkill> useContext</BioSkill>.
-                        </WorkGridItem>
-                    </Section>
+                    {
+                        works.map(item => <Section key={item.id}>
+                            <WorkGridItem id={item.id} demoUrl={item.demoUrl}
+                                          title={item.title}
+                                          thumbnail={item.thumbnail}>{item.desc}<br />
+                                {
+                                    item.skills.map(skill => <BioSkill key={skill}> {skill},</BioSkill>)
+                                }
+                            </WorkGridItem>
+                        </Section>)
+                    }
                 </SimpleGrid>
             </Container>
         </Layout>
