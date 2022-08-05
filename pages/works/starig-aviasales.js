@@ -9,7 +9,7 @@ import NextLink from "next/link";
 
 const Work = () => {
     return (
-        <Layout title={'Starig Aviasales'}>
+        <Layout title={'starig aviasales'}>
             <Container>
                 <Title>
                     starig aviasales <Badge>2022</Badge>
