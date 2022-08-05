@@ -41,7 +41,7 @@ const Works = () => {
         {
             id: 'starig-aviasales',
             demoUrl: `https://starig.github.io/starig-aviasales/`,
-            title: 'Starig Aviasales',
+            title: 'starig aviasales',
             thumbnail: aviasalesThumbnail,
             desc: 'Тестовое задание Starig Aviasales.',
             skills: [
