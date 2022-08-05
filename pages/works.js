@@ -8,6 +8,7 @@ import libraryThumbnail from '../public/images/library.png';
 import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
+import aviasalesThumbnail from '../public/images/aviasales.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
@@ -35,6 +36,18 @@ const Works = () => {
                 'Wordpress',
                 'CSS',
                 'Elementor',
+            ]
+        },
+        {
+            id: 'starig-aviasales',
+            demoUrl: `https://starig.github.io/starig-aviasales/`,
+            title: 'Starig Aviasales',
+            thumbnail: aviasalesThumbnail,
+            desc: 'Тестовое задание Starig Aviasales.',
+            skills: [
+                'React',
+                'Redux-Toolkit',
+                'TypeScript',
             ]
         },
         {
