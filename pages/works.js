@@ -9,6 +9,7 @@ import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import aviasalesThumbnail from '../public/images/aviasales.png';
+import swaggerThumbnail from '../public/images/starig-swagger.PNG'
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
@@ -44,6 +45,18 @@ const Works = () => {
             title: 'starig aviasales',
             thumbnail: aviasalesThumbnail,
             desc: 'Тестовое задание Starig Aviasales.',
+            skills: [
+                'React',
+                'Redux-Toolkit',
+                'TypeScript',
+            ]
+        },
+        {
+            id: 'starig-swagger',
+            demoUrl: `https://starig.github.io/starig-swagger/`,
+            title: 'starig swagger',
+            thumbnail: swaggerThumbnail,
+            desc: 'Тестовое задание Starig Swagger.',
             skills: [
                 'React',
                 'Redux-Toolkit',
