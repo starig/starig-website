@@ -15,7 +15,7 @@ const Work = () => {
                     starig swagger <Badge>2022</Badge>
                 </Title>
                 <>
-                    <WorkImage src={'/images/aviasales.png'} alt={'starig-aviasales'}/>
+                    <WorkImage src={'/images/starig-swagger.png'} alt={'starig-swagger'}/>
                     <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
                     <Stack>
                         <li>
