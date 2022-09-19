@@ -9,7 +9,7 @@ import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import aviasalesThumbnail from '../public/images/aviasales.png';
-import swaggerThumbnail from '../public/images/starig-swagger.PNG'
+import swaggerThumbnail from '../public/images/starig-swagger.png'
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
