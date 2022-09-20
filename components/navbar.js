@@ -17,6 +17,9 @@ import Logo from "./logo";
 import {HamburgerIcon} from "@chakra-ui/icons";
 import ThemeToggleButton from "../components/theme-toggle-button";
 import WorkLink from "./work-link";
+import {AiFillHome} from "react-icons/ai";
+import {MdOutlineWork} from "react-icons/md";
+import {FaGithub, FaTelegram} from "react-icons/fa";
 
 const LinkItem = ({href, path, children}) => {
     const active = path === href;
@@ -74,16 +77,16 @@ const Navbar = props => {
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
                             <MenuList>
                                 <NextLink href={'/'} passHref>
-                                    <MenuItem as={Link}>Homepage</MenuItem>
+                                    <MenuItem as={Link} icon={<AiFillHome />}>Homepage</MenuItem>
                                 </NextLink>
                                 <NextLink href={'/works'} passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
+                                    <MenuItem as={Link} icon={<MdOutlineWork />}>Works</MenuItem>
                                 </NextLink>
                                 <NextLink href={'https://t.me/starig'} passHref>
-                                    <MenuItem as={Link}>Telegram</MenuItem>
+                                    <MenuItem as={Link} icon={<FaTelegram />}>Telegram</MenuItem>
                                 </NextLink>
                                 <NextLink href={'https://github.com/starig'} passHref>
-                                    <MenuItem as={Link}>GitHub</MenuItem>
+                                    <MenuItem as={Link} icon={<FaGithub />}>GitHub</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View Source</MenuItem>
                             </MenuList>
