@@ -44,8 +44,8 @@ const Page = () => {
                         Этот сайт
                     </Heading>
                     <Paragraph>
-                        Я создал с помощью <BioSkill>Next.js</BioSkill> и
-                        <BioSkill> Chakra UI</BioSkill>.<br/>
+                        Я создал с помощью <BioSkill>Next.js</BioSkill>,
+                        <BioSkill> Chakra UI</BioSkill> и <BioSkill> Three.js</BioSkill>.<br/>
                         Здесь Вы можете познакомиться со мной, как с Frontend разработчиком.
                     </Paragraph>
                 </Section>
