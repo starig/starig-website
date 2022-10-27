@@ -18,7 +18,7 @@ const Page = () => {
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}
                      align="center"
                      mb={6} mt={6}>
-                    Привет, Я Frontend разработчик из России!
+                    Привет, Я Frontend React разработчик из России!
                 </Box>
                 <Grid templateColumns='repeat(2, 1fr)'>
                     <GridItem flexGrow={1}>
@@ -92,6 +92,8 @@ const Page = () => {
                         <BioText>
                             учу <BioSkill>React</BioSkill>. Уже хорошо знаком со следующими технологиями:
                             <SkillsList>
+                                <li><BioSkill>TypeScript</BioSkill></li>
+                                <li><BioSkill>Next.js</BioSkill></li>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
                                 <li><BioSkill>React Hooks</BioSkill></li>
                                 <li><BioSkill>React Router</BioSkill></li>
@@ -105,11 +107,9 @@ const Page = () => {
                             </SkillsList>
                             В планах выучить или начал учить:
                             <SkillsList>
-                                <li><BioSkill>TypeScript</BioSkill></li>
-                                <li><BioSkill>Next.js</BioSkill></li>
+                                <li><BioSkill>React Native</BioSkill></li>
                                 <li><BioSkill>Node.js</BioSkill></li>
                                 <li><BioSkill>Redux-Thunk</BioSkill></li>
-                                <li><BioSkill>E2E Testing/Unit Testing</BioSkill></li>
                                 <li><BioSkill>Webpack</BioSkill></li>
                             </SkillsList>
                         </BioText>
