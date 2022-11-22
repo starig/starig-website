@@ -25,7 +25,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             Иван Старков
                         </Heading>
-                        <p>Forever Junior Developer</p>
+                        <p>Forever Senior Developer</p>
                         <Email>
                             <ContactLink href={'mailto:starkovivan3@gmail.com'}>
                                 starkovivan3@gmail.com <EmailIcon ml={1}/></ContactLink>
