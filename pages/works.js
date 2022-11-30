@@ -10,6 +10,7 @@ import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import aviasalesThumbnail from '../public/images/aviasales.png';
 import swaggerThumbnail from '../public/images/starig-swagger.png'
+import deckThumbnail from '../public/images/starig-deck.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
@@ -37,6 +38,18 @@ const Works = () => {
                 'Wordpress',
                 'CSS',
                 'Elementor',
+            ]
+        },
+        {
+            id: 'starig-deck',
+            demoUrl: `https://starig.github.io/starig-deck/`,
+            title: 'starig deck',
+            thumbnail: deckThumbnail,
+            desc: 'Тестовое задание Starig Deck.',
+            skills: [
+                'React',
+                'Redux-Toolkit',
+                'TypeScript',
             ]
         },
         {
