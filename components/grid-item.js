@@ -17,7 +17,7 @@ export const GridItem = ({children, href, title, thumbnail}) => (
     </Box>
 )
 
-export const WorkGridItem = ({children, id, title, thumbnail, demoUrl}) => (
+export const WorkGridItem = ({children, id, title, thumbnail, demoUrl, productUrl}) => (
     <Box w={'100%'} align={'center'}>
         <NextLink href={`/works/${id}`}>
             <LinkBox cursor={"pointer"}>
@@ -30,8 +30,13 @@ export const WorkGridItem = ({children, id, title, thumbnail, demoUrl}) => (
                 <Text fontSize={14}>{children}</Text>
             </LinkBox>
         </NextLink>
-        <WorkLink href={demoUrl} target="_blank">
-            Демо
+        <WorkLink href={demoUrl || productUrl} target="_blank">
+            {
+                demoUrl && 'Демо'
+            }
+            {
+                productUrl && 'Сайт'
+            }
         </WorkLink>
     </Box>
 )

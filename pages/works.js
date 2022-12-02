@@ -9,6 +9,7 @@ import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import aviasalesThumbnail from '../public/images/aviasales.png';
+import chestAIThumbnail from '../public/images/chest-ai.png';
 import swaggerThumbnail from '../public/images/starig-swagger.png'
 import deckThumbnail from '../public/images/starig-deck.png';
 import {BioSkill} from "../components/bio";
@@ -16,6 +17,18 @@ import Layout from "../components/layouts/article";
 
 const Works = () => {
     const works = [
+        {
+            id: 'chest-ai',
+            productUrl: `https://chest-ai.khamuga.com/`,
+            title: 'Chest-AI',
+            thumbnail: chestAIThumbnail,
+            desc: 'Коммерческий проект в компании ICT Group.',
+            skills: [
+                'React',
+                'Next',
+                'MUI',
+            ]
+        },
         {
             id: 'react-pizza',
             demoUrl: `http://react-pizza.edelen.ru/`,
@@ -30,7 +43,7 @@ const Works = () => {
         },
         {
             id: 'tellsy',
-            demoUrl: `https://mozlabtreki.ru/galereya-marafonov/`,
+            productUrl: `https://mozlabtreki.ru/galereya-marafonov/`,
             title: 'Tellsy',
             thumbnail: tellsyThumbnail,
             desc: 'Коммерческий проект в веб-студии Tellsy.',
@@ -146,7 +159,7 @@ const Works = () => {
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     {
                         works.map(item => <Section key={item.id}>
-                            <WorkGridItem id={item.id} demoUrl={item.demoUrl}
+                            <WorkGridItem id={item.id} demoUrl={item.demoUrl} productUrl={item.productUrl}
                                           title={item.title}
                                           thumbnail={item.thumbnail}>{item.desc}<br />
                                 {

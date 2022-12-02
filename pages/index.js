@@ -8,6 +8,7 @@ import {BioSection, BioSkill, BioText, BioYear, SkillsList} from "../components/
 import Layout from "../components/layouts/article";
 import {ContactLink} from "../components/contact-link";
 import {Email} from '../components/email';
+import {ICTGroup} from "../components/ictgroup";
 
 
 const Page = () => {
@@ -90,27 +91,19 @@ const Page = () => {
                     <BioSection>
                         <BioYear>В настоящее время</BioYear>
                         <BioText>
-                            учу <BioSkill>React</BioSkill>. Уже хорошо знаком со следующими технологиями:
+                            работаю в самой крупной IT компании в Монголии <ICTGroup href={'https://www.ictgroup.mn/'}
+                                                                                     target="_blank">ICT
+                            Group</ICTGroup>
+                            <BioSkill> Frontend/Mobile</BioSkill> разработчиком.
+                            Использую следующие технологии:
                             <SkillsList>
                                 <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>Next.js</BioSkill></li>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
-                                <li><BioSkill>React Hooks</BioSkill></li>
-                                <li><BioSkill>React Router</BioSkill></li>
-                                <li><BioSkill>React Skeleton</BioSkill></li>
-                                <li><BioSkill>Loadash</BioSkill></li>
-                                <li><BioSkill>Axios</BioSkill></li>
-                                <li><BioSkill>npm</BioSkill></li>
-                                <li><BioSkill>CSS Modules</BioSkill></li>
-                                <li><BioSkill>SASS </BioSkill>(<BioSkill>SCSS</BioSkill>)</li>
+                                <li><BioSkill>Flutter</BioSkill></li>
+                                <li><BioSkill>BloC</BioSkill></li>
+                                <li><BioSkill>GetX</BioSkill></li>
                                 <li><BioSkill>Git</BioSkill></li>
-                            </SkillsList>
-                            В планах выучить или начал учить:
-                            <SkillsList>
-                                <li><BioSkill>React Native</BioSkill></li>
-                                <li><BioSkill>Node.js</BioSkill></li>
-                                <li><BioSkill>Redux-Thunk</BioSkill></li>
-                                <li><BioSkill>Webpack</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>
