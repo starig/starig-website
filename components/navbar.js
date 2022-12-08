@@ -72,10 +72,13 @@ const Navbar = props => {
                     <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View Source</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
-                    <Stack direction={{base: 'column', md: 'row'}}>
-                        <DownloadCvButton />
+                    <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}}>
+                        <DownloadCvButton text={true}/>
                         <ThemeToggleButton />
                     </Stack>
+                    <Box display={{base: 'flex', md: 'none'}} justifyContent={'end'} gap={2}>
+                        <DownloadCvButton text={false}/>
+                        <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
@@ -95,6 +98,7 @@ const Navbar = props => {
                                 <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View Source</MenuItem>
                             </MenuList>
                         </Menu>
+                    </Box>
                     </Box>
                 </Box>
             </Container>
