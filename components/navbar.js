@@ -20,6 +20,7 @@ import WorkLink from "./work-link";
 import {AiFillHome} from "react-icons/ai";
 import {MdOutlineWork} from "react-icons/md";
 import {FaGithub, FaTelegram} from "react-icons/fa";
+import DownloadCvButton from "./download-cv-button";
 
 const LinkItem = ({href, path, children}) => {
     const active = path === href;
@@ -71,7 +72,10 @@ const Navbar = props => {
                     <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View Source</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
-                    <ThemeToggleButton />
+                    <Stack direction={{base: 'column', md: 'row'}}>
+                        <DownloadCvButton />
+                        <ThemeToggleButton />
+                    </Stack>
                     <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
