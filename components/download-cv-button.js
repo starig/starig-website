@@ -1,4 +1,4 @@
-import {IconButton, useColorModeValue} from "@chakra-ui/react";
+import {Button, useColorModeValue} from "@chakra-ui/react";
 import {DownloadIcon} from "@chakra-ui/icons";
 import {AnimatePresence, motion,} from "framer-motion";
 
@@ -22,11 +22,11 @@ const DownloadCvButton = () => {
         <AnimatePresence exitBeforeEnter initial={false}>
             <motion.div style={{display: 'inline-block'}}
                         initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} exit={{y: 20, opacity: 0}}
-                        transition={{duration: 0.2}} whileTap={{y: 20}}>
-                <IconButton aria-label={'Download CV'}
+                        transition={{duration: 0.2}} whileTap={{y: 20}} >
+                <Button aria-label={'Download CV'}
                             colorScheme={useColorModeValue('purple', 'orange')}
-                            icon={<DownloadIcon/>}
-                            onClick={downloadCV}></IconButton>
+                            rightIcon={<DownloadIcon/>}
+                            onClick={downloadCV}>Download CV</Button>
             </motion.div>
         </AnimatePresence>
     )
