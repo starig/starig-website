@@ -70,8 +70,7 @@ const Page = () => {
                         <BioYear>В 17 лет</BioYear>
                         <BioText>
                             Начал активно изучать вёрстку. Познакомился с CSS библиотеками
-                            (<BioSkill>Bootstrap</BioSkill> и
-                            др.).
+                            и фреймворками.
                             Начал работать с <BioSkill>Figma</BioSkill>/<BioSkill>Photoshop</BioSkill>/<BioSkill>Adobe
                             Xd</BioSkill>.
                         </BioText>
