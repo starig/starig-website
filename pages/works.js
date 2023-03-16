@@ -12,6 +12,7 @@ import aviasalesThumbnail from '../public/images/aviasales.png';
 import chestAIThumbnail from '../public/images/chest-ai.png';
 import swaggerThumbnail from '../public/images/starig-swagger.png'
 import deckThumbnail from '../public/images/starig-deck.png';
+import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
@@ -24,9 +25,21 @@ const Works = () => {
             thumbnail: chestAIThumbnail,
             desc: 'Коммерческий проект в компании ICT Group.',
             skills: [
-                'React',
-                'Next',
+                'React,',
+                'Next,',
                 'MUI',
+            ]
+        },
+        {
+            id: 'digital-uvs',
+            // productUrl: `https://apps.apple.com/ru/app/%D0%B4%D0%B8%D0%B6%D0%B8%D1%82%D0%B0%D0%BB-%D0%B0%D0%B9%D0%BC%D0%B0%D0%B3-%D1%83%D0%B2%D1%81/id1629887689?l=en`,
+            title: 'Digital Province',
+            thumbnail: digitalUvsThumbnail,
+            desc: 'Коммерческий проект в компании ICT Group.',
+            skills: [
+                'Flutter,',
+                'Dart,',
+                'BloC',
             ]
         },
         {
@@ -36,8 +49,8 @@ const Works = () => {
             thumbnail: pizzaThumbnail,
             desc: 'React Pizza курс по ReactJS.',
             skills: [
-                'React',
-                'TypeScript',
+                'React,',
+                'TypeScript,',
                 'Redux-Toolkit',
             ]
         },
@@ -48,8 +61,8 @@ const Works = () => {
             thumbnail: tellsyThumbnail,
             desc: 'Коммерческий проект в веб-студии Tellsy.',
             skills: [
-                'Wordpress',
-                'CSS',
+                'Wordpress,',
+                'CSS,',
                 'Elementor',
             ]
         },
@@ -60,8 +73,8 @@ const Works = () => {
             thumbnail: deckThumbnail,
             desc: 'Тестовое задание Starig Deck.',
             skills: [
-                'React',
-                'Redux-Toolkit',
+                'React,',
+                'Redux-Toolkit,',
                 'TypeScript',
             ]
         },
@@ -72,8 +85,8 @@ const Works = () => {
             thumbnail: aviasalesThumbnail,
             desc: 'Тестовое задание Starig Aviasales.',
             skills: [
-                'React',
-                'Redux-Toolkit',
+                'React,',
+                'Redux-Toolkit,',
                 'TypeScript',
             ]
         },
@@ -84,8 +97,8 @@ const Works = () => {
             thumbnail: swaggerThumbnail,
             desc: 'Тестовое задание Starig Swagger.',
             skills: [
-                'React',
-                'Redux-Toolkit',
+                'React,',
+                'Redux-Toolkit,',
                 'TypeScript',
             ]
         },
@@ -96,9 +109,9 @@ const Works = () => {
             thumbnail: agencyThumbnail,
             desc: 'Тестовое задание Agency.',
             skills: [
-                'React',
-                'Lazy loading',
-                'Redux-Toolkit',
+                'React,',
+                'Lazy loading,',
+                'Redux-Toolkit,',
             ]
         },
         {
@@ -108,8 +121,8 @@ const Works = () => {
             thumbnail: beerThumbnail,
             desc: 'Тестовое задание React Beer.',
             skills: [
-                'React',
-                'GitHub Pages',
+                'React,',
+                'GitHub Pages,',
                 'Redux-Toolkit',
             ]
         },
@@ -120,8 +133,8 @@ const Works = () => {
             thumbnail: libraryThumbnail,
             desc: 'Тестовое задание React Library.',
             skills: [
-                'React',
-                'Google Books API',
+                'React,',
+                'Google Books API,',
                 'Sort/Filter',
             ]
         },
@@ -132,8 +145,8 @@ const Works = () => {
             thumbnail: justiceThumbnail,
             desc: 'Тестовое задание Justice CRM.',
             skills: [
-                'React',
-                'React Charts',
+                'React,',
+                'React Charts,',
                 'Redux',
             ]
         },
@@ -144,8 +157,8 @@ const Works = () => {
             thumbnail: pinterestThumbnail,
             desc: 'Тестовое задание Cat Pinterest.',
             skills: [
-                'React',
-                'Lazy Loading',
+                'React,',
+                'Lazy Loading,',
                 'useContext',
             ]
         },
@@ -163,7 +176,7 @@ const Works = () => {
                                           title={item.title}
                                           thumbnail={item.thumbnail}>{item.desc}<br />
                                 {
-                                    item.skills.map(skill => <BioSkill key={skill}> {skill},</BioSkill>)
+                                    item.skills.map(skill => <BioSkill key={skill}> {skill}</BioSkill>)
                                 }
                             </WorkGridItem>
                         </Section>)
