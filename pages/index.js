@@ -96,12 +96,12 @@ const Page = () => {
                             <BioSkill> Frontend/Mobile</BioSkill> разработчиком.
                             Использую следующие технологии:
                             <SkillsList>
-                                <li><BioSkill>TypeScript</BioSkill></li>
-                                <li><BioSkill>Next.js</BioSkill></li>
-                                <li><BioSkill>Redux-Toolkit</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
                                 <li><BioSkill>BloC</BioSkill></li>
-                                <li><BioSkill>GetX</BioSkill></li>
+                                <li><BioSkill>React-Native</BioSkill></li>
+                                <li><BioSkill>TypeScript</BioSkill></li>
+                                <li><BioSkill>Redux-Toolkit</BioSkill></li>
+                                <li><BioSkill>Next.js</BioSkill></li>
                                 <li><BioSkill>Git</BioSkill></li>
                             </SkillsList>
                         </BioText>
