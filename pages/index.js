@@ -9,6 +9,7 @@ import Layout from "../components/layouts/article";
 import {ContactLink} from "../components/contact-link";
 import {Email} from '../components/email';
 import {ICTGroup} from "../components/ictgroup";
+import Timer from "../components/timer";
 
 
 const Page = () => {
@@ -104,6 +105,12 @@ const Page = () => {
                                 <li><BioSkill>Next.js</BioSkill></li>
                                 <li><BioSkill>Git</BioSkill></li>
                             </SkillsList>
+                        </BioText>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>Опыт работы</BioYear>
+                        <BioText>
+                            <Timer />
                         </BioText>
                     </BioSection>
                     <Box align={'center'} my={4}>

@@ -25,3 +25,23 @@ color: #fc5252;
 export const SkillsList = styled.ul`
 padding-left: 2.4em;
 `
+
+export const TimerContainer = styled.div`
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+export const TimerItem = styled.div`
+  display: flex;
+  gap: 5px;
+`;
+
+
+
+export const TimerLabel = styled.span`
+  font-size: 12px;
+  margin-top: 5px;
+`;
