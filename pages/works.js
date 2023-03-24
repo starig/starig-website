@@ -2,15 +2,10 @@ import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "../components/section";
 import {WorkGridItem} from "../components/grid-item";
 import pizzaThumbnail from '../public/images/react-pizza.png';
-import tellsyThumbnail from '../public/images/tellsy.png';
-import agencyThumbnail from '../public/images/agency.png';
-import libraryThumbnail from '../public/images/library.png';
-import pinterestThumbnail from '../public/images/pinterest.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import aviasalesThumbnail from '../public/images/aviasales.png';
 import chestAIThumbnail from '../public/images/chest-ai.png';
-import swaggerThumbnail from '../public/images/starig-swagger.png'
 import deckThumbnail from '../public/images/starig-deck.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import {BioSkill} from "../components/bio";
@@ -32,7 +27,6 @@ const Works = () => {
         },
         {
             id: 'digital-uvs',
-            // productUrl: `https://apps.apple.com/ru/app/%D0%B4%D0%B8%D0%B6%D0%B8%D1%82%D0%B0%D0%BB-%D0%B0%D0%B9%D0%BC%D0%B0%D0%B3-%D1%83%D0%B2%D1%81/id1629887689?l=en`,
             title: 'Digital Province',
             thumbnail: digitalUvsThumbnail,
             desc: 'Коммерческий проект в компании ICT Group.',
@@ -52,18 +46,6 @@ const Works = () => {
                 'React,',
                 'TypeScript,',
                 'Redux-Toolkit',
-            ]
-        },
-        {
-            id: 'tellsy',
-            productUrl: `https://mozlabtreki.ru/galereya-marafonov/`,
-            title: 'Tellsy',
-            thumbnail: tellsyThumbnail,
-            desc: 'Коммерческий проект в веб-студии Tellsy.',
-            skills: [
-                'Wordpress,',
-                'CSS,',
-                'Elementor',
             ]
         },
         {
@@ -91,30 +73,6 @@ const Works = () => {
             ]
         },
         {
-            id: 'starig-swagger',
-            demoUrl: `https://starig.github.io/starig-swagger/`,
-            title: 'starig swagger',
-            thumbnail: swaggerThumbnail,
-            desc: 'Тестовое задание Starig Swagger.',
-            skills: [
-                'React,',
-                'Redux-Toolkit,',
-                'TypeScript',
-            ]
-        },
-        {
-            id: 'react-agency',
-            demoUrl: `http://agency-test-task.edelen.ru/`,
-            title: 'React Agency',
-            thumbnail: agencyThumbnail,
-            desc: 'Тестовое задание Agency.',
-            skills: [
-                'React,',
-                'Lazy loading,',
-                'Redux-Toolkit,',
-            ]
-        },
-        {
             id: 'react-beer',
             demoUrl: `https://starig.github.io/react-beer/`,
             title: 'React Beer',
@@ -127,18 +85,6 @@ const Works = () => {
             ]
         },
         {
-            id: 'react-library',
-            demoUrl: `http://react-library.edelen.ru/`,
-            title: 'React Library',
-            thumbnail: libraryThumbnail,
-            desc: 'Тестовое задание React Library.',
-            skills: [
-                'React,',
-                'Google Books API,',
-                'Sort/Filter',
-            ]
-        },
-        {
             id: 'react-justice',
             demoUrl: `http://justice-crm.edelen.ru/`,
             title: 'Justice CRM',
@@ -148,18 +94,6 @@ const Works = () => {
                 'React,',
                 'React Charts,',
                 'Redux',
-            ]
-        },
-        {
-            id: 'cat-pinterest',
-            demoUrl: `http://cat-pinterest.edelen.ru/`,
-            title: 'Cat Pinterest',
-            thumbnail: pinterestThumbnail,
-            desc: 'Тестовое задание Cat Pinterest.',
-            skills: [
-                'React,',
-                'Lazy Loading,',
-                'useContext',
             ]
         },
     ]
