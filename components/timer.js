@@ -14,7 +14,9 @@ const Timer = () => {
     }, []);
 
     const getYearLabel = (num) => {
-        if (num % 10 === 1 && num !== 11) {
+        if (num >= 11 && num <= 14) {
+            return 'лет';
+        } else if (num % 10 === 1 && num !== 11) {
             return 'год';
         } else if (num % 10 >= 2 && num % 10 <= 4) {
             return 'года';
@@ -25,7 +27,9 @@ const Timer = () => {
 
 
     const getDayLabel = (num) => {
-        if (num % 10 === 1  && num !== 11) {
+        if (num >= 11 && num <= 14) {
+            return 'дней';
+        } else if (num % 10 === 1  && num !== 11) {
             return 'день';
         } else if (num % 10 >= 2 && num % 10 <= 4) {
             return 'дня';
@@ -35,7 +39,9 @@ const Timer = () => {
     };
 
     const getHourLabel = (num) => {
-        if (num % 10 === 1 && num !== 11) {
+        if (num >= 11 && num <= 14) {
+            return 'часов';
+        } else if (num % 10 === 1 && num !== 11) {
             return 'час';
         } else if (num % 10 >= 2 && num % 10 <= 4) {
             return 'часа';
@@ -45,7 +51,9 @@ const Timer = () => {
     };
 
     const getMinuteLabel = (num) => {
-        if (num % 10 === 1 && num !== 11) {
+        if (num >= 11 && num <= 14) {
+            return 'минут';
+        } else if (num % 10 === 1) {
             return 'минута';
         } else if (num % 10 >= 2 && num % 10 <= 4) {
             return 'минуты';
@@ -55,7 +63,9 @@ const Timer = () => {
     };
 
     const getSecondLabel = (num) => {
-        if (num % 10 === 1 && num !== 11) {
+        if (num >= 11 && num <= 14) {
+            return 'секунд';
+        } else if (num % 10 === 1 && num !== 11) {
             return 'секунда';
         } else if (num % 10 >= 2 && num % 10 <= 4) {
             return 'секунды';
