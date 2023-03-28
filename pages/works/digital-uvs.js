@@ -14,7 +14,7 @@ const Work = () => {
         <Layout title={'Digital Uvs'}>
             <Container>
                 <Title>
-                    Digital Uvs <Badge>2022-2023</Badge>
+                    Digital Uvs <Badge>2023</Badge>
                 </Title>
                 <>
                     <WorkImage src={'/images/digital-uvs.png'} alt={'Digital Uvs'}/>
