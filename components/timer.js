@@ -7,8 +7,8 @@ const Timer = () => {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            const timeSince2020 = new Date() - new Date('2021-10-14');
-            setTimeElapsed(timeSince2020);
+            const timeSince = new Date() - new Date('2022-04-01');
+            setTimeElapsed(timeSince);
         }, 1000);
         return () => clearInterval(timer);
     }, []);
