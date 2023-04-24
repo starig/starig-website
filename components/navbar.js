@@ -5,11 +5,12 @@ import {
     Flex,
     Heading,
     IconButton,
+    Link,
     Menu,
     MenuButton,
-    MenuItem, MenuList,
+    MenuItem,
+    MenuList,
     Stack,
-    Link,
     useColorModeValue
 } from "@chakra-ui/react";
 import NextLink from 'next/link';
@@ -69,36 +70,39 @@ const Navbar = props => {
                     <LinkItem href={'/works'} path={path}>Works</LinkItem>
                     <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
                     <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
-                    <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View Source</WorkLink>
+                    <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View
+                        Source</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
                     <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}}>
                         <DownloadCvButton text={true}/>
-                        <ThemeToggleButton />
+                        <ThemeToggleButton/>
                     </Stack>
                     <Box display={{base: 'flex', md: 'none'}} justifyContent={'end'} gap={2}>
                         <DownloadCvButton text={false}/>
-                        <ThemeToggleButton />
-                    <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-                        <Menu>
-                            <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
-                            <MenuList>
-                                <NextLink href={'/'} passHref>
-                                    <MenuItem as={Link} icon={<AiFillHome />}>Homepage</MenuItem>
-                                </NextLink>
-                                <NextLink href={'/works'} passHref>
-                                    <MenuItem as={Link} icon={<MdOutlineWork />}>Works</MenuItem>
-                                </NextLink>
-                                <NextLink href={'https://t.me/starig'} passHref>
-                                    <MenuItem as={Link} icon={<FaTelegram />}>Telegram</MenuItem>
-                                </NextLink>
-                                <NextLink href={'https://github.com/starig'} passHref>
-                                    <MenuItem as={Link} icon={<FaGithub />}>GitHub</MenuItem>
-                                </NextLink>
-                                <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View Source</MenuItem>
-                            </MenuList>
-                        </Menu>
-                    </Box>
+                        <ThemeToggleButton/>
+                        <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                            <Menu>
+                                <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline"
+                                            aria-label="Options"/>
+                                <MenuList>
+                                    <NextLink href={'/'} passHref>
+                                        <MenuItem as={Link} icon={<AiFillHome/>}>Homepage</MenuItem>
+                                    </NextLink>
+                                    <NextLink href={'/works'} passHref>
+                                        <MenuItem as={Link} icon={<MdOutlineWork/>}>Works</MenuItem>
+                                    </NextLink>
+                                    <NextLink href={'https://t.me/starig'} passHref>
+                                        <MenuItem as={Link} icon={<FaTelegram/>}>Telegram</MenuItem>
+                                    </NextLink>
+                                    <NextLink href={'https://github.com/starig'} passHref>
+                                        <MenuItem as={Link} icon={<FaGithub/>}>GitHub</MenuItem>
+                                    </NextLink>
+                                    <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View
+                                        Source</MenuItem>
+                                </MenuList>
+                            </Menu>
+                        </Box>
                     </Box>
                 </Box>
             </Container>
