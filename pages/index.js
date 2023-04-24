@@ -20,7 +20,7 @@ const Page = () => {
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}
                      align="center"
                      mb={6} mt={6}>
-                    Привет, Я Frontend React разработчик из России!
+                    Привет, Я Mobile/Frontend разработчик!
                 </Box>
                 <Grid templateColumns='repeat(2, 1fr)'>
                     <GridItem flexGrow={1}>
