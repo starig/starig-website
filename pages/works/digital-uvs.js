@@ -48,7 +48,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>Google Play Store</Meta>
-                        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ict.digital_province_khovd'} target="_blank">
+                        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ict.digital_province_uvs'} target="_blank">
                             Google Play Store <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
