@@ -8,21 +8,21 @@ import aviasalesThumbnail from '../public/images/aviasales.png';
 import chestAIThumbnail from '../public/images/chest-ai.png';
 import deckThumbnail from '../public/images/starig-deck.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
+import digitalUBThumbnail from '../public/images/smartub.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
     const works = [
         {
-            id: 'chest-ai',
-            productUrl: `https://chest-ai.khamuga.com/`,
-            title: 'Chest-AI',
-            thumbnail: chestAIThumbnail,
+            id: 'digital-ub',
+            title: 'Digital UB',
+            thumbnail: digitalUBThumbnail,
             desc: 'Коммерческий проект в компании ICT Group.',
             skills: [
-                'React,',
-                'Next,',
-                'MUI',
+                'Flutter,',
+                'Dart,',
+                'BloC',
             ]
         },
         {
@@ -34,6 +34,18 @@ const Works = () => {
                 'Flutter,',
                 'Dart,',
                 'BloC',
+            ]
+        },
+        {
+            id: 'chest-ai',
+            productUrl: `https://chest-ai.khamuga.com/`,
+            title: 'Chest-AI',
+            thumbnail: chestAIThumbnail,
+            desc: 'Коммерческий проект в компании ICT Group.',
+            skills: [
+                'React,',
+                'Next,',
+                'MUI',
             ]
         },
         {
