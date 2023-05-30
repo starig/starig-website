@@ -61,7 +61,7 @@ const VoxelDog = () => {
           scale,
           -scale,
           0.01,
-          50000
+          500
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -69,9 +69,9 @@ const VoxelDog = () => {
       const hemisphereLight = new THREE.HemisphereLight( 0xffffee, 0x080820, 0.4 );
       scene.add( hemisphereLight );
 
-      const light = new THREE.PointLight( 0xffffff, 1 );
-      light.position.set( 10, 90, 10 ); //default; light shining from top
-      light.castShadow = true; // default false
+      const light = new THREE.PointLight( 0xffffff, 0.6 );
+      light.position.set( 10, 90, 10 );
+      light.castShadow = true;
       scene.add( light );
 
 //Set up shadow properties for the light
