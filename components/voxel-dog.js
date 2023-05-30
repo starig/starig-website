@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = '/dog.glb'
+  const urlDogGLB = '/starig.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -36,6 +36,8 @@ const VoxelDog = () => {
         antialias: true,
         alpha: true
       })
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
       renderer.outputEncoding = THREE.sRGBEncoding
@@ -52,7 +54,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.05 + 4.8
       const camera = new THREE.OrthographicCamera(
           -scale,
           scale,
@@ -64,17 +66,25 @@ const VoxelDog = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const hemisphereLight = new THREE.HemisphereLight( 0xffffee, 0x080820, 0.4 );
+      scene.add( hemisphereLight );
+
+      const light = new THREE.PointLight( 0xffffff, 1 );
+      light.position.set( 10, 90, 10 ); //default; light shining from top
+      light.castShadow = true; // default false
+      scene.add( light );
+
+//Set up shadow properties for the light
+      light.shadow.mapSize.width = 1024; // default
+      light.shadow.mapSize.height = 1024; // default
+      light.shadow.camera.near = 0.5;
+      light.shadow.camera.far = 850;
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, urlDogGLB, {
-        receiveShadow: false,
-        castShadow: false
-      }).then(() => {
+      loadGLTFModel(scene, urlDogGLB).then(() => {
         animate()
         setLoading(false)
       })
