@@ -54,7 +54,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.05 + 4.8
+      const scale = scH * 0.065 + 4.8
       const camera = new THREE.OrthographicCamera(
           -scale,
           scale,
@@ -74,7 +74,6 @@ const VoxelDog = () => {
       light.castShadow = true;
       scene.add( light );
 
-//Set up shadow properties for the light
       light.shadow.mapSize.width = 1024; // default
       light.shadow.mapSize.height = 1024; // default
       light.shadow.camera.near = 0.5;
