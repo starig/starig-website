@@ -66,10 +66,10 @@ const VoxelDog = () => {
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
 
-      const hemisphereLight = new THREE.HemisphereLight( 0xffffee, 0x080820, 0.4 );
+      const hemisphereLight = new THREE.HemisphereLight( 0xffffee, 0x080820, 0.8 );
       scene.add( hemisphereLight );
 
-      const light = new THREE.PointLight( 0xffffff, 0.6 );
+      const light = new THREE.PointLight( 0xffffff, 1 );
       light.position.set( 10, 90, 10 );
       light.castShadow = true;
       scene.add( light );
