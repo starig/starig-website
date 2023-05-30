@@ -70,7 +70,7 @@ const VoxelDog = () => {
       scene.add( hemisphereLight );
 
       const light = new THREE.PointLight( 0xffffff, 1 );
-      light.position.set( -40, 120, 40 );
+      light.position.set( -70, 105, 15 );
       light.castShadow = true;
       scene.add( light );
 
