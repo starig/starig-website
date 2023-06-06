@@ -5,7 +5,7 @@ import pizzaThumbnail from '../public/images/react-pizza.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
 import chestAIThumbnail from '../public/images/chest-ai.png';
-import deckThumbnail from '../public/images/starig-deck.png';
+import deckThumbnail from '../public/images/starig-desk.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import digitalUBThumbnail from '../public/images/smartub.png';
 import {BioSkill} from "../components/bio";

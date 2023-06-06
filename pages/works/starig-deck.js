@@ -12,10 +12,10 @@ const Work = () => {
         <Layout title={'starig deck'}>
             <Container>
                 <Title>
-                    starig swagger <Badge>2022</Badge>
+                    starig desk <Badge>2022</Badge>
                 </Title>
                 <>
-                    <WorkImage src={'/images/starig-deck.png'} alt={'starig-swagger'}/>
+                    <WorkImage src={'/images/starig-desk.png'} alt={'starig-desk'}/>
                     <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
                     <Stack>
                         <li>
