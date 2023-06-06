@@ -4,7 +4,6 @@ import {WorkGridItem} from "../components/grid-item";
 import pizzaThumbnail from '../public/images/react-pizza.png';
 import justiceThumbnail from '../public/images/justice.png';
 import beerThumbnail from '../public/images/react-beer.png';
-import aviasalesThumbnail from '../public/images/aviasales.png';
 import chestAIThumbnail from '../public/images/chest-ai.png';
 import deckThumbnail from '../public/images/starig-deck.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
@@ -66,18 +65,6 @@ const Works = () => {
             title: 'starig deck',
             thumbnail: deckThumbnail,
             desc: 'Тестовое задание Starig Deck.',
-            skills: [
-                'React,',
-                'Redux-Toolkit,',
-                'TypeScript',
-            ]
-        },
-        {
-            id: 'starig-aviasales',
-            demoUrl: `https://starig.github.io/starig-aviasales/`,
-            title: 'starig aviasales',
-            thumbnail: aviasalesThumbnail,
-            desc: 'Тестовое задание Starig Aviasales.',
             skills: [
                 'React,',
                 'Redux-Toolkit,',
