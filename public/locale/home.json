@@ -1,0 +1,43 @@
+{
+  "ru": {
+    "hello_phrase": "Привет, Я Mobile/Frontend разработчик!",
+    "name": "Иван Старков",
+    "this_site": "Этот сайт",
+    "i_created_with": "Я создал с помощью ",
+    "u_can_meet_me": "Здесь Вы можете познакомиться со мной, как с Frontend разработчиком.",
+    "bt_me": "Обо мне",
+    "at13yo": "В 13 лет",
+    "at13yo_1": "Увлёкся web-разработкой. Познакомился с ",
+    "at13yo_2": " Решал простые задачки (создавал калькулятор, таймер, работал с API Yandex Maps).",
+    "at17yo": "В 17 лет",
+    "at17yo_1": "Начал активно изучать вёрстку. Познакомился с CSS библиотеками и фреймворками. Начал работать с ",
+    "at18yo": "В 18 лет",
+    "at18yo_1": "После сдачи ЕГЭ, поступил в Университет ИТМО в Санкт-Петербурге. На факультет Программная инженерия, специальность Нейротехнологии и программирование. На первом курсе университета занялся frontend разработкой. Начал проходить курсы по React. Появился большой интерес к этой сфере. В октябре этого же года устролся верстальшиком в веб-студию в Москве.",
+    "currently": "В настоящее время",
+    "currently_1": "работаю в самой крупной IT компании в Монголии",
+    "currently_2": " Mobile разработчиком. Использую следующие технологии:",
+    "experience": "Опыт работы",
+    "my_works": "Мои работы"
+  },
+  "en": {
+    "hello_phrase": "Hi, I am a Mobile/Frontend developer!",
+    "name": "Ivan Starkov",
+    "this_site": "This site",
+    "i_created_with": "I created with",
+    "u_can_meet_me": "Here you can meet me as a Frontend developer.",
+    "bt_me": "About me",
+    "at13yo": "At 13 y.o.",
+    "at13yo_1": "I got interested in web-development. Got acquainted with ",
+    "at13yo_2": " Solved simple problems (created a calculator, timer, worked with the API Yandex Maps).",
+    "at17yo": "At 17 y.o.",
+    "at17yo_1": "I began to actively study the web development. Became familiar with CSS libraries and frameworks. Started working with ",
+    "at18yo": "At 18 y.o.",
+    "at18yo_1": "After passing the Unified State Exam, I entered the ITMO University in St. Petersburg. At the Faculty of Software Engineering, specialty Neurotechnology and Programming. In the first year of university I started frontend development. Started taking courses on React. Appeared to be very interested in this sphere. In October of the same year I got a job as a coder at a web studio in Moscow.",
+    "currently": "Currently",
+    "currently_1": "I work in the largest IT company in Mongolia ",
+    "currently_2": " as a Mobile developer. My main stack is:",
+    "experience": "Work experience",
+    "my_works": "My works"
+
+  }
+}

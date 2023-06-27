@@ -9,19 +9,20 @@ import {
     Menu,
     MenuButton,
     MenuItem,
-    MenuList,
+    MenuList, Popover, PopoverBody, PopoverContent, PopoverHeader, PopoverTrigger,
     Stack,
     useColorModeValue
 } from "@chakra-ui/react";
 import NextLink from 'next/link';
 import Logo from "./logo";
-import {HamburgerIcon} from "@chakra-ui/icons";
+import {HamburgerIcon, SettingsIcon} from "@chakra-ui/icons";
 import ThemeToggleButton from "../components/theme-toggle-button";
 import WorkLink from "./work-link";
 import {AiFillHome} from "react-icons/ai";
 import {MdOutlineWork} from "react-icons/md";
 import {FaGithub, FaTelegram} from "react-icons/fa";
 import DownloadCvButton from "./download-cv-button";
+import LanguageToggleButton from "./language-toggle-button";
 
 const LinkItem = ({href, path, children}) => {
     const active = path === href;
@@ -76,7 +77,30 @@ const Navbar = props => {
                 <Box flex={1} align='right'>
                     <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}}>
                         <DownloadCvButton text={true}/>
-                        <ThemeToggleButton/>
+                        <Popover>
+                            <PopoverTrigger>
+                                <IconButton aria-label={'Toggle theme'}
+                                            colorScheme={useColorModeValue('purple', 'orange')}
+                                            icon={<SettingsIcon/>}
+                                            onClick={() => {
+                                            }}></IconButton>
+                            </PopoverTrigger>
+                            <PopoverContent bg={useColorModeValue('#f0e7db', '#202023')}
+                                            borderColor={useColorModeValue('#736d6d', null)}
+                                            maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
+                                <PopoverHeader pt={4} fontWeight='bold' border='0'>
+                                    <Flex justify={'center'}>
+                                        Settings
+                                    </Flex>
+                                </PopoverHeader>
+                                <PopoverBody>
+                                    <Flex justify="space-evenly">
+                                        <ThemeToggleButton/>
+                                        <LanguageToggleButton/>
+                                    </Flex>
+                                </PopoverBody>
+                            </PopoverContent>
+                        </Popover>
                     </Stack>
                     <Box display={{base: 'flex', md: 'none'}} justifyContent={'end'} gap={2}>
                         <DownloadCvButton text={false}/>

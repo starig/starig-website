@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Box, Button, Container, Grid, GridItem, Heading, Image, useColorModeValue} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -10,9 +10,14 @@ import {ContactLink} from "../components/contact-link";
 import {Email} from '../components/email';
 import {ICTGroup} from "../components/ictgroup";
 import Timer from "../components/timer";
+import {useSelector} from "react-redux";
+import homeTranslation from './../public/locale/home.json';
+import commonTranslation from './../public/locale/common.json';
 
 
 const Page = () => {
+    const currentLocale = useSelector((state) => state.language.locale);
+
 
     return (
         <Layout>
@@ -20,12 +25,12 @@ const Page = () => {
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}
                      align="center"
                      mb={6} mt={6}>
-                    Привет, Я Mobile/Frontend разработчик!
+                    {homeTranslation[currentLocale].hello_phrase}
                 </Box>
                 <Grid templateColumns='repeat(2, 1fr)'>
                     <GridItem flexGrow={1}>
                         <Heading as="h2" variant="page-title">
-                            Иван Старков
+                            {homeTranslation[currentLocale].name}
                         </Heading>
                         <p>Forever Junior Developer</p>
                         <Email>
@@ -43,59 +48,48 @@ const Page = () => {
 
                 <Section>
                     <Heading as={'h3'} variant={'section-title'}>
-                        Этот сайт
+                        {homeTranslation[currentLocale].this_site}
                     </Heading>
                     <Paragraph>
-                        Я создал с помощью <BioSkill>Next.js</BioSkill>,
-                        <BioSkill> Chakra UI</BioSkill> и <BioSkill> Three.js</BioSkill>.<br/>
-                        Здесь Вы можете познакомиться со мной, как с Frontend разработчиком.
+                        {homeTranslation[currentLocale].i_created_with} <BioSkill>Next.js</BioSkill>,
+                        <BioSkill> Chakra UI</BioSkill> {commonTranslation[currentLocale].and} <BioSkill> Three.js</BioSkill>.<br/>
+                        {homeTranslation[currentLocale].u_can_meet_me}
                     </Paragraph>
                 </Section>
 
                 <Section delay={0.1}>
                     <Heading as={'h3'} variant={'section-title'}>
-                        Обо мне
+                        {homeTranslation[currentLocale].bt_me}
                     </Heading>
                     <BioSection>
                         <BioYear>
-                            В 13 лет
+                            {homeTranslation[currentLocale].at13yo}
                         </BioYear>
                         <BioText>
-                            Увлёкся web-разработкой.
-                            Познакомился
-                            с <BioSkill>HTML</BioSkill>, <BioSkill>CSS</BioSkill>, <BioSkill>JavaScript</BioSkill>.
-                            Решал простые задачки (создавал калькулятор, таймер, работал с API Yandex Maps).
+                            {homeTranslation[currentLocale].at13yo_1}
+                            <BioSkill>HTML</BioSkill>, <BioSkill>CSS</BioSkill>, <BioSkill>JavaScript</BioSkill>.
+                            {homeTranslation[currentLocale].at13yo_2}
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>В 17 лет</BioYear>
+                        <BioYear>{homeTranslation[currentLocale].at17yo}</BioYear>
                         <BioText>
-                            Начал активно изучать вёрстку. Познакомился с CSS библиотеками
-                            и фреймворками.
-                            Начал работать с <BioSkill>Figma</BioSkill>/<BioSkill>Photoshop</BioSkill>/<BioSkill>Adobe
+                            {homeTranslation[currentLocale].at17yo_1}<BioSkill>Figma</BioSkill>/<BioSkill>Photoshop</BioSkill>/<BioSkill>Adobe
                             Xd</BioSkill>.
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>В 18 лет</BioYear>
-                        <BioText>
-                            После сдачи ЕГЭ, поступил в <b>Университет ИТМО</b> в Санкт-Петербурге. На
-                            факультет <b>Программная инженерия</b>, специальность <b>Нейротехнологии и
-                            программирование</b>.
-                            На первом курсе университета занялся frontend разработкой. Начал проходить курсы
-                            по <BioSkill>React</BioSkill>. Появился большой интерес к этой сфере. В октябре этого же
-                            года
-                            устролся верстальшиком в веб-студию в <b>Москве</b>.
-                        </BioText>
+                        <BioYear>{homeTranslation[currentLocale].at18yo}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].at18yo_1}</BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>В настоящее время</BioYear>
+                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
                         <BioText>
-                            работаю в самой крупной IT компании в Монголии <ICTGroup href={'https://www.ictgroup.mn/'}
-                                                                                     target="_blank">ICT
-                            Group</ICTGroup>
-                            <BioSkill> Frontend/Mobile</BioSkill> разработчиком.
-                            Использую следующие технологии:
+                            {homeTranslation[currentLocale].currently_1}
+                            <ICTGroup href={'https://www.ictgroup.mn/'} target="_blank">
+                                ICT Group
+                            </ICTGroup>
+                            {homeTranslation[currentLocale].currently_2}
                             <SkillsList>
                                 <li><BioSkill>Flutter</BioSkill></li>
                                 <li><BioSkill>BloC</BioSkill></li>
@@ -108,7 +102,7 @@ const Page = () => {
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>Опыт работы</BioYear>
+                        <BioYear>{homeTranslation[currentLocale].experience}</BioYear>
                         <BioText>
                             <Timer />
                         </BioText>
@@ -118,7 +112,7 @@ const Page = () => {
                             <Button rightIcon={<ChevronRightIcon/>}
                                     bg={useColorModeValue('#F56565', '#E53E3E')}
                                     _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
-                                Мои работы
+                                {homeTranslation[currentLocale].my_works}
                             </Button>
                         </NextLink>
                     </Box>
