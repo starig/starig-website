@@ -104,7 +104,30 @@ const Navbar = props => {
                     </Stack>
                     <Box display={{base: 'flex', md: 'none'}} justifyContent={'end'} gap={2}>
                         <DownloadCvButton text={false}/>
-                        <ThemeToggleButton/>
+                        <Popover>
+                            <PopoverTrigger>
+                                <IconButton aria-label={'Toggle theme'}
+                                            colorScheme={useColorModeValue('purple', 'orange')}
+                                            icon={<SettingsIcon/>}
+                                            onClick={() => {
+                                            }}></IconButton>
+                            </PopoverTrigger>
+                            <PopoverContent bg={useColorModeValue('#f0e7db', '#202023')}
+                                            borderColor={useColorModeValue('#736d6d', null)}
+                                            maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
+                                <PopoverHeader pt={4} fontWeight='bold' border='0'>
+                                    <Flex justify={'center'}>
+                                        Settings
+                                    </Flex>
+                                </PopoverHeader>
+                                <PopoverBody>
+                                    <Flex justify="space-evenly">
+                                        <ThemeToggleButton/>
+                                        <LanguageToggleButton/>
+                                    </Flex>
+                                </PopoverBody>
+                            </PopoverContent>
+                        </Popover>
                         <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                             <Menu>
                                 <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline"
