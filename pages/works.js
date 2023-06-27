@@ -10,14 +10,18 @@ import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import digitalUBThumbnail from '../public/images/smartub.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
+import {useSelector} from "react-redux";
+import worksTranslation from "../public/locale/works.json";
 
 const Works = () => {
+    const currentLocale = useSelector((state) => state.language.locale);
+
     const works = [
         {
             id: 'digital-ub',
             title: 'Digital UB',
             thumbnail: digitalUBThumbnail,
-            desc: 'Коммерческий проект в компании ICT Group.',
+            desc: worksTranslation[currentLocale].digitalUb.subtitle,
             skills: [
                 'Flutter,',
                 'Dart,',
@@ -28,7 +32,7 @@ const Works = () => {
             id: 'digital-uvs',
             title: 'Digital Province',
             thumbnail: digitalUvsThumbnail,
-            desc: 'Коммерческий проект в компании ICT Group.',
+            desc: worksTranslation[currentLocale].digitalProvince.subtitle,
             skills: [
                 'Flutter,',
                 'Dart,',
@@ -40,7 +44,7 @@ const Works = () => {
             productUrl: `https://chest-ai.khamuga.com/`,
             title: 'Chest-AI',
             thumbnail: chestAIThumbnail,
-            desc: 'Коммерческий проект в компании ICT Group.',
+            desc: worksTranslation[currentLocale].chestAi.subtitle,
             skills: [
                 'React,',
                 'Next,',
@@ -52,7 +56,7 @@ const Works = () => {
             demoUrl: `http://react-pizza.edelen.ru/`,
             title: 'React Pizza',
             thumbnail: pizzaThumbnail,
-            desc: 'React Pizza курс по ReactJS.',
+            desc: worksTranslation[currentLocale].reactPizza.subtitle,
             skills: [
                 'React,',
                 'TypeScript,',
@@ -64,7 +68,7 @@ const Works = () => {
             demoUrl: `https://starig.github.io/starig-deck/`,
             title: 'starig deck',
             thumbnail: deckThumbnail,
-            desc: 'Тестовое задание Starig Deck.',
+            desc: worksTranslation[currentLocale].starigDeck.subtitle,
             skills: [
                 'React,',
                 'Redux-Toolkit,',
@@ -76,7 +80,7 @@ const Works = () => {
             demoUrl: `https://starig.github.io/react-beer/`,
             title: 'React Beer',
             thumbnail: beerThumbnail,
-            desc: 'Тестовое задание React Beer.',
+            desc: worksTranslation[currentLocale].reactBeer.subtitle,
             skills: [
                 'React,',
                 'GitHub Pages,',
@@ -88,7 +92,7 @@ const Works = () => {
             demoUrl: `http://justice-crm.edelen.ru/`,
             title: 'Justice CRM',
             thumbnail: justiceThumbnail,
-            desc: 'Тестовое задание Justice CRM.',
+            desc: worksTranslation[currentLocale].justiceCRM.subtitle,
             skills: [
                 'React,',
                 'React Charts,',

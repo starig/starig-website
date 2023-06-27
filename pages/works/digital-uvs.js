@@ -8,8 +8,14 @@ import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
 import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
+import {useSelector} from "react-redux";
+import worksTranslation from './../../public/locale/works.json';
+
 
 const Work = () => {
+
+    const currentLocale = useSelector((state) => state.language.locale);
+
     return (
         <Layout title={'Digital Uvs'}>
             <Container>
@@ -18,7 +24,7 @@ const Work = () => {
                 </Title>
                 <>
                     <WorkImage src={'/images/digital-uvs.png'} alt={'Digital Uvs'}/>
-                    <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
                             <BioSkill>Flutter</BioSkill>
@@ -32,11 +38,9 @@ const Work = () => {
                     </Stack>
                 </>
                 <Section>
-                    <Heading as={'h4'} fontSize={24}>Про проект:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}:</Heading>
                     <Paragraph>
-                        <b>Digital Province</b> — это ряд мобильных сервисов для монгольсих провинций. В каждой провинции
-                        будет платформа, которая содержит множество сервисов и функций для упрощения удовлетворения
-                        повседневных потребностей.
+                        <b>Digital Province</b> — {worksTranslation[currentLocale].digitalProvince.description}
                     </Paragraph>
                 </Section>
                 <List>
@@ -58,7 +62,7 @@ const Work = () => {
                         <Button leftIcon={<ChevronLeftIcon/>}
                                 bg={useColorModeValue('#F56565', '#E53E3E')}
                                 _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
-                            Вернуться назад
+                            {worksTranslation[currentLocale].goBack}
                         </Button>
                     </NextLink>
                 </Box>

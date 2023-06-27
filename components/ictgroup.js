@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const ICTGroup = styled.a`
   font-weight: 600;
   font-size: 16px;
+  color: cornflowerblue;
   :hover {
     text-decoration: underline;
   }

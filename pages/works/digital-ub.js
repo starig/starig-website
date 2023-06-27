@@ -8,8 +8,12 @@ import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
 import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
+import worksTranslation from './../../public/locale/works.json';
+import {useSelector} from "react-redux";
 
 const Work = () => {
+    const currentLocale = useSelector((state) => state.language.locale);
+
     return (
         <Layout title={'Digital UB'}>
             <Container>
@@ -18,7 +22,7 @@ const Work = () => {
                 </Title>
                 <>
                     <WorkImage src={'/images/smartub.png'} alt={'Digital UB'}/>
-                    <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
                             <BioSkill>Flutter</BioSkill>
@@ -32,9 +36,9 @@ const Work = () => {
                     </Stack>
                 </>
                 <Section>
-                    <Heading as={'h4'} fontSize={24}>Про проект:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
-                        <b>Digital UB</b> — комплексное приложение для жителей столицы. Информационно-технологическое решение, интегрирующее все остальные системы столицы и обеспечивающее полноценную связь государства и граждан в режиме реального времени.
+                        <b>Digital UB</b> — {worksTranslation[currentLocale].digitalUb.description}
                     </Paragraph>
                 </Section>
                 <List>
@@ -56,7 +60,7 @@ const Work = () => {
                         <Button leftIcon={<ChevronLeftIcon/>}
                                 bg={useColorModeValue('#F56565', '#E53E3E')}
                                 _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
-                            Вернуться назад
+                            {worksTranslation[currentLocale].goBack}
                         </Button>
                     </NextLink>
                 </Box>

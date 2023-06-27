@@ -6,8 +6,12 @@ import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
+import worksTranslation from './../../public/locale/works.json';
+import {useSelector} from "react-redux";
 
 const Work = () => {
+
+    const currentLocale = useSelector((state) => state.language.locale);
     return (
         <Layout title={'Justice CRM'}>
             <Container>
@@ -16,7 +20,7 @@ const Work = () => {
                 </Title>
                 <>
                     <WorkImage src={'/images/justice.png'} alt={'Justice CRM'}/>
-                    <Heading as={'h4'} fontSize={24}>Стек технологий:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
                             <BioSkill>React 18</BioSkill>
@@ -54,7 +58,7 @@ const Work = () => {
                         <Button leftIcon={<ChevronLeftIcon/>}
                                 bg={useColorModeValue('#F56565', '#E53E3E')}
                                 _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
-                            Вернуться назад
+                            {worksTranslation[currentLocale].goBack}
                         </Button>
                     </NextLink>
                 </Box>

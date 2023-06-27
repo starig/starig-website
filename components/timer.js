@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import {TimerContainer, TimerItem, TimerLabel} from "./bio";
 import {useColorModeValue} from "@chakra-ui/react";
+import {useDispatch, useSelector} from "react-redux";
 
 const Timer = () => {
     const [timeElapsed, setTimeElapsed] = useState(0);
+    const languageState = useSelector((state) => state.language)
+
+    const [isRus, setIsRus] = useState(languageState.locale === 'ru');
+
+    useEffect(() => {
+        if (languageState.locale === 'ru') {
+            setIsRus(true);
+        } else {
+            setIsRus(false);
+        }
+    }, [languageState.locale])
+
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -14,64 +27,112 @@ const Timer = () => {
     }, []);
 
     const getYearLabel = (num) => {
-        if (num >= 11 && num <= 14) {
-            return 'лет';
-        } else if (num % 10 === 1 && num !== 11) {
-            return 'год';
-        } else if (num % 10 >= 2 && num % 10 <= 4) {
-            return 'года';
-        } else {
-            return 'лет';
+        if (isRus) {
+            if (num >= 11 && num <= 14) {
+                return 'лет';
+            } else if (num % 10 === 1 && num !== 11) {
+                return 'год';
+            } else if (num % 10 >= 2 && num % 10 <= 4) {
+                return 'года';
+            } else {
+                return 'лет';
+            }
+        } else if (!isRus) {
+            if (num !== 1) {
+                return 'years'
+            } else {
+                return 'year'
+            }
         }
+
     };
+
 
 
     const getDayLabel = (num) => {
-        if (num >= 11 && num <= 14) {
-            return 'дней';
-        } else if (num % 10 === 1  && num !== 11) {
-            return 'день';
-        } else if (num % 10 >= 2 && num % 10 <= 4) {
-            return 'дня';
-        } else {
-            return 'дней';
+        if (isRus) {
+            if (num >= 11 && num <= 14) {
+                return 'дней';
+            } else if (num % 10 === 1 && num !== 11) {
+                return 'день';
+            } else if (num % 10 >= 2 && num % 10 <= 4) {
+                return 'дня';
+            } else {
+                return 'дней';
+            }
+        } else if (!isRus) {
+            if (num !== 1) {
+                return 'days'
+            } else {
+                return 'day'
+            }
         }
+
     };
+
 
     const getHourLabel = (num) => {
-        if (num >= 11 && num <= 14) {
-            return 'часов';
-        } else if (num % 10 === 1 && num !== 11) {
-            return 'час';
-        } else if (num % 10 >= 2 && num % 10 <= 4) {
-            return 'часа';
-        } else {
-            return 'часов';
+        if (isRus) {
+            if (num >= 11 && num <= 14) {
+                return 'часов';
+            } else if (num % 10 === 1 && num !== 11) {
+                return 'час';
+            } else if (num % 10 >= 2 && num % 10 <= 4) {
+                return 'часа';
+            } else {
+                return 'часов';
+            }
+        } else if (!isRus) {
+            if (num !== 1) {
+                return 'hours'
+            } else {
+                return 'hour'
+            }
         }
     };
+
 
     const getMinuteLabel = (num) => {
-        if (num >= 11 && num <= 14) {
-            return 'минут';
-        } else if (num % 10 === 1) {
-            return 'минута';
-        } else if (num % 10 >= 2 && num % 10 <= 4) {
-            return 'минуты';
-        } else {
-            return 'минут';
+        if (isRus) {
+            if (num >= 11 && num <= 14) {
+                return 'минут';
+            } else if (num % 10 === 1) {
+                return 'минута';
+            } else if (num % 10 >= 2 && num % 10 <= 4) {
+                return 'минуты';
+            } else {
+                return 'минут';
+            }
+        } else if (!isRus) {
+            if (num !== 1) {
+                return 'minutes'
+            } else {
+                return 'minute'
+            }
         }
+
     };
 
+
     const getSecondLabel = (num) => {
-        if (num >= 11 && num <= 14) {
-            return 'секунд';
-        } else if (num % 10 === 1 && num !== 11) {
-            return 'секунда';
-        } else if (num % 10 >= 2 && num % 10 <= 4) {
-            return 'секунды';
-        } else {
-            return 'секунд';
+        if (isRus) {
+            if (num >= 11 && num <= 14) {
+                return 'секунд';
+            } else if (num % 10 === 1 && num !== 11) {
+                return 'секунда';
+            } else if (num % 10 >= 2 && num % 10 <= 4) {
+                return 'секунды';
+            } else {
+                return 'секунд';
+            }
+        } else if (!isRus) {
+            if (num !== 1) {
+                return 'seconds'
+            } else {
+                return 'second'
+            }
         }
+
     };
 
     const seconds = Math.floor(timeElapsed / 1000) % 60;
