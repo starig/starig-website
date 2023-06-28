@@ -91,13 +91,14 @@ const Page = () => {
                             </ICTGroup>
                             {homeTranslation[currentLocale].currently_2}
                             <SkillsList>
+                                <li><BioSkill>Dart</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
                                 <li><BioSkill>BloC</BioSkill></li>
+                                <li><BioSkill>Cubit</BioSkill></li>
+                                <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>React-Native</BioSkill></li>
                                 <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
-                                <li><BioSkill>Next.js</BioSkill></li>
-                                <li><BioSkill>Git</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>

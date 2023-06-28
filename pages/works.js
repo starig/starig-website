@@ -104,7 +104,7 @@ const Works = () => {
         <Layout>
             <Container>
                 <Heading as={"h3"} fontSize={20} mb={4}>
-                    Портфолио
+                    {worksTranslation[currentLocale].portfolio}
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     {

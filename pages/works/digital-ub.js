@@ -31,7 +31,22 @@ const Work = () => {
                             <BioSkill>Dart</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>BloC</BioSkill>
+                            <BioSkill>BloC (Cubit)</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>dio</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>Freezed</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>Clean Architecture</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>Rest API</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>Swagger</BioSkill>
                         </li>
                     </Stack>
                 </>

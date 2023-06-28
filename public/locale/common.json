@@ -1,8 +1,12 @@
 {
   "ru": {
-    "and": "и"
+    "and": "и",
+    "demo": "Демо",
+    "site": "Сайт"
   },
   "en": {
-    "and": "and"
+    "and": "and",
+    "demo": "Demo",
+    "site": "Site"
   }
 }
