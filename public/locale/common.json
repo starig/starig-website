@@ -2,11 +2,13 @@
   "ru": {
     "and": "и",
     "demo": "Демо",
-    "site": "Сайт"
+    "site": "Сайт",
+    "settings": "Настройки"
   },
   "en": {
     "and": "and",
     "demo": "Demo",
-    "site": "Site"
+    "site": "Site",
+    "settings": "Settings"
   }
 }

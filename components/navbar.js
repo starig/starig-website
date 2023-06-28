@@ -23,6 +23,8 @@ import {MdOutlineWork} from "react-icons/md";
 import {FaGithub, FaTelegram} from "react-icons/fa";
 import DownloadCvButton from "./download-cv-button";
 import LanguageToggleButton from "./language-toggle-button";
+import {useSelector} from "react-redux";
+import commonTranslation from "./../public/locale/common.json";
 
 const LinkItem = ({href, path, children}) => {
     const active = path === href;
@@ -41,7 +43,9 @@ const LinkItem = ({href, path, children}) => {
 }
 
 const Navbar = props => {
-    const {path} = props
+    const {path} = props;
+    const currentLocale = useSelector((state) => state.language.locale);
+
 
     return (
         <Box position='fixed'
@@ -90,7 +94,7 @@ const Navbar = props => {
                                             maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
                                 <PopoverHeader pt={4} fontWeight='bold' border='0'>
                                     <Flex justify={'center'}>
-                                        Settings
+                                        {commonTranslation[currentLocale].settings}
                                     </Flex>
                                 </PopoverHeader>
                                 <PopoverBody>
