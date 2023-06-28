@@ -20,7 +20,7 @@ const Timer = () => {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            const timeSince = new Date() - new Date('2022-04-01');
+            const timeSince = new Date() - new Date('2021-04-01');
             setTimeElapsed(timeSince);
         }, 1000);
         return () => clearInterval(timer);
