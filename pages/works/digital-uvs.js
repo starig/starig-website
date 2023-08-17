@@ -53,7 +53,7 @@ const Work = () => {
                     </Stack>
                 </>
                 <Section>
-                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}:</Heading>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
                         <b>Digital Province</b> — {worksTranslation[currentLocale].digitalProvince.description}
                     </Paragraph>
