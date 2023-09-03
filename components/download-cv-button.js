@@ -1,21 +1,39 @@
 import {Button, IconButton, useColorModeValue} from "@chakra-ui/react";
 import {DownloadIcon} from "@chakra-ui/icons";
 import {AnimatePresence, motion,} from "framer-motion";
+import {useSelector} from "react-redux";
 
 
 const DownloadCvButton = ({text}) => {
+    const currentLocale = useSelector((state) => state.language.locale);
+
     const downloadCV = () => {
-        fetch('CV.pdf').then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'CV.pdf';
-                alink.click();
+        console.log(currentLocale);
+        if (currentLocale === 'en') {
+            fetch('CV_eu.pdf').then(response => {
+                response.blob().then(blob => {
+                    // Creating new object of PDF file
+                    const fileURL = window.URL.createObjectURL(blob);
+                    // Setting various property values
+                    let alink = document.createElement('a');
+                    alink.href = fileURL;
+                    alink.download = 'CV_eu.pdf';
+                    alink.click();
+                })
             })
-        })
+        } else if (currentLocale === 'ru') {
+            fetch('CV_ru.pdf').then(response => {
+                response.blob().then(blob => {
+                    // Creating new object of PDF file
+                    const fileURL = window.URL.createObjectURL(blob);
+                    // Setting various property values
+                    let alink = document.createElement('a');
+                    alink.href = fileURL;
+                    alink.download = 'CV_ru.pdf';
+                    alink.click();
+                })
+            })
+        }
     }
 
 

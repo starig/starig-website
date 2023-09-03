@@ -52,7 +52,8 @@ const Page = () => {
                     </Heading>
                     <Paragraph>
                         {homeTranslation[currentLocale].i_created_with} <BioSkill>Next.js</BioSkill>,
-                        <BioSkill> Chakra UI</BioSkill> {commonTranslation[currentLocale].and} <BioSkill> Three.js</BioSkill>.<br/>
+                        <BioSkill> Chakra UI</BioSkill> {commonTranslation[currentLocale].and}
+                        <BioSkill> Three.js</BioSkill>.<br/>
                         {homeTranslation[currentLocale].u_can_meet_me}
                     </Paragraph>
                 </Section>
@@ -79,8 +80,13 @@ const Page = () => {
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>{homeTranslation[currentLocale].at18yo}</BioYear>
-                        <BioText>{homeTranslation[currentLocale].at18yo_1}</BioText>
+                        <BioYear>{homeTranslation[currentLocale].at2020}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].at2020_1}</BioText>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>{homeTranslation[currentLocale].at2021}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].at2021_1}
+                            <BioSkill>TypeScript</BioSkill>, <BioSkill>React-Native</BioSkill>, <BioSkill>Dart</BioSkill>, <BioSkill>Flutter</BioSkill>.</BioText>
                     </BioSection>
                     <BioSection>
                         <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
@@ -105,7 +111,7 @@ const Page = () => {
                     <BioSection>
                         <BioYear>{homeTranslation[currentLocale].experience}</BioYear>
                         <BioText>
-                            <Timer />
+                            <Timer/>
                         </BioText>
                     </BioSection>
                     <Box align={'center'} my={4}>
