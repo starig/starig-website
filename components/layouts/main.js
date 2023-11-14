@@ -15,7 +15,7 @@ const Main = ({children, router}) => {
                       content="Иван Старков - Гений, миллиардер, плейбой, филантроп. Один из лучших программистов мира согласно исследованиям за 2023 год."/>
                 <meta name='keywords' content={'starig, STARIG, Starkov Ivan, Старков Иван, Старков, frontend, flutter developer, flutter mobile, Иван Старков, иван старков, старков иван'}/>
                 <meta name="google-site-verification" content="L3A06pEhVNAFLonseNimA_xYExquRnbAeu3oqGkiORM"/>
-                <title>Ivan Starkov - Homepage</title>
+                <title>Иван Старков - Homepage</title>
             </Head>
 
             <Navbar path={router.asPath}/>
