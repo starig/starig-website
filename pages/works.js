@@ -8,6 +8,7 @@ import chestAIThumbnail from '../public/images/chest-ai.png';
 import deckThumbnail from '../public/images/starig-desk.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import digitalUBThumbnail from '../public/images/smartub.png';
+import picnicThumbnail from '../public/images/picnic.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -17,6 +18,17 @@ const Works = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
     const works = [
+        {
+            id: 'picnic',
+            title: 'Picnic',
+            thumbnail: picnicThumbnail,
+            desc: worksTranslation[currentLocale].digitalUb.subtitle,
+            skills: [
+                'Flutter,',
+                'Dart,',
+                'BloC',
+            ]
+        },
         {
             id: 'digital-ub',
             title: 'Digital UB',

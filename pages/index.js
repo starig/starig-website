@@ -13,6 +13,7 @@ import Timer from "../components/timer";
 import {useSelector} from "react-redux";
 import homeTranslation from './../public/locale/home.json';
 import commonTranslation from './../public/locale/common.json';
+import {PicnicLink} from "../components/picnic-link";
 
 
 const Page = () => {
@@ -89,13 +90,13 @@ const Page = () => {
                             <BioSkill>TypeScript</BioSkill>, <BioSkill>React-Native</BioSkill>, <BioSkill>Dart</BioSkill>, <BioSkill>Flutter</BioSkill>.</BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
-                        <BioText>
-                            {homeTranslation[currentLocale].currently_1}
+                        <BioYear>{homeTranslation[currentLocale].at2022}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].at2022_1}
                             <ICTGroup href={'https://www.ictgroup.mn/'} target="_blank">
                                 ICT Group
                             </ICTGroup>
-                            {homeTranslation[currentLocale].currently_2}
+                            {homeTranslation[currentLocale].at2022_2} </BioText>
+                        <BioText>
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
@@ -105,6 +106,26 @@ const Page = () => {
                                 <li><BioSkill>React-Native</BioSkill></li>
                                 <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
+                            </SkillsList>
+                        </BioText>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
+                        <BioText>
+                            {homeTranslation[currentLocale].currently_1}
+                            <PicnicLink href={'https://picnic.zone/'} target="_blank">
+                                Picnic
+                            </PicnicLink>
+                            {homeTranslation[currentLocale].currently_2}
+                            <SkillsList>
+                                <li><BioSkill>Dart</BioSkill></li>
+                                <li><BioSkill>Flutter</BioSkill></li>
+                                <li><BioSkill>BloC</BioSkill></li>
+                                <li><BioSkill>Cubit</BioSkill></li>
+                                <li><BioSkill>GraphQl</BioSkill></li>
+                                <li><BioSkill>Clean Architecture</BioSkill></li>
+                                <li><BioSkill>DI</BioSkill></li>
+                                <li><BioSkill>flutter_gen</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>
