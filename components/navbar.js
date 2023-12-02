@@ -89,7 +89,7 @@ const Navbar = props => {
                                             onClick={() => {
                                             }}></IconButton>
                             </PopoverTrigger>
-                            <PopoverContent bg={useColorModeValue('#f0e7db', '#202023')}
+                            <PopoverContent bg={useColorModeValue('#f0e7db', '#1d1d21')}
                                             borderColor={useColorModeValue('#736d6d', null)}
                                             maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
                                 <PopoverHeader pt={4} fontWeight='bold' border='0'>
@@ -116,7 +116,7 @@ const Navbar = props => {
                                             onClick={() => {
                                             }}></IconButton>
                             </PopoverTrigger>
-                            <PopoverContent bg={useColorModeValue('#f0e7db', '#202023')}
+                            <PopoverContent bg={useColorModeValue('#f0e7db', '#1d1d21')}
                                             borderColor={useColorModeValue('#736d6d', null)}
                                             maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
                                 <PopoverHeader pt={4} fontWeight='bold' border='0'>
