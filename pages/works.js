@@ -22,7 +22,7 @@ const Works = () => {
             id: 'picnic',
             title: 'Picnic',
             thumbnail: picnicThumbnail,
-            desc: worksTranslation[currentLocale].digitalUb.subtitle,
+            desc: worksTranslation[currentLocale].picnic.subtitle,
             skills: [
                 'Flutter,',
                 'Dart,',
