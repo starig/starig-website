@@ -102,7 +102,6 @@ const Page = () => {
                                 <li><BioSkill>Flutter</BioSkill></li>
                                 <li><BioSkill>BloC</BioSkill></li>
                                 <li><BioSkill>Cubit</BioSkill></li>
-                                <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>React-Native</BioSkill></li>
                                 <li><BioSkill>TypeScript</BioSkill></li>
                                 <li><BioSkill>Redux-Toolkit</BioSkill></li>
