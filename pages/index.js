@@ -86,8 +86,16 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>{homeTranslation[currentLocale].at2021}</BioYear>
-                        <BioText>{homeTranslation[currentLocale].at2021_1}
-                            <BioSkill>TypeScript</BioSkill>, <BioSkill>React-Native</BioSkill>, <BioSkill>Dart</BioSkill>, <BioSkill>Flutter</BioSkill>.</BioText>
+                        <BioText>{homeTranslation[currentLocale].at2021_1}</BioText>
+                        <BioText>
+                            <SkillsList>
+                                <li><BioSkill>TypeScript</BioSkill></li>
+                                <li><BioSkill>Next</BioSkill></li>
+                                <li><BioSkill>React</BioSkill></li>
+                                <li><BioSkill>Redux-Toolkit</BioSkill></li>
+                                <li><BioSkill>React-Native</BioSkill></li>
+                            </SkillsList>
+                        </BioText>
                     </BioSection>
                     <BioSection>
                         <BioYear>{homeTranslation[currentLocale].at2022}</BioYear>
