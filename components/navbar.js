@@ -75,8 +75,7 @@ const Navbar = props => {
                     <LinkItem href={'/works'} path={path}>Works</LinkItem>
                     <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
                     <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
-                    <WorkLink href={'https://github.com/starig/starig-website'} target="_blank" path={path}>View
-                        Source</WorkLink>
+                    <WorkLink href={'https://www.linkedin.com/in/ivan-starkov%F0%9F%A4%96-35456820a/'} target="_blank" path={path}>LinkedIn</WorkLink>
                 </Stack>
                 <Box flex={1} align='right'>
                     <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}}>

@@ -19,7 +19,6 @@ import {PicnicLink} from "../components/picnic-link";
 const Page = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
-
     return (
         <Layout>
             <Container>
