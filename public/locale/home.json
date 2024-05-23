@@ -22,7 +22,9 @@
     "currently_1": "работаю в компании  ",
     "currently_2": " на позиции Senior Flutter разработчик. Мой основной стек:",
     "experience": "Опыт работы",
-    "my_works": "Мои работы"
+    "my_works": "Мои работы",
+    "tip": "Tip",
+    "tip_description": "You can change the site language by clicking on the settings button!"
   },
   "en": {
     "hello_phrase": "Hi, I am a Mobile/Frontend developer!",
@@ -47,7 +49,8 @@
     "currently_1": "I work in company named ",
     "currently_2": " as a Senior Flutter developer. My main stack is:",
     "experience": "Work experience",
-    "my_works": "My works"
-
+    "my_works": "My works",
+    "tip": "Подсказка",
+    "tip_description": "Вы можете изменить язык сайта нажав на кнопку настройки!"
   }
 }

@@ -1,23 +1,49 @@
 import React, {useEffect} from 'react';
-import {Box, Button, Container, Grid, GridItem, Heading, Image, useColorModeValue} from "@chakra-ui/react";
+import {Box, Button, Container, Grid, GridItem, Heading, Image, useColorModeValue, useToast} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from "next/link";
-import {ChevronRightIcon, EmailIcon} from "@chakra-ui/icons";
+import {ChevronRightIcon, EmailIcon, SettingsIcon} from "@chakra-ui/icons";
 import {BioSection, BioSkill, BioText, BioYear, SkillsList} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {ContactLink} from "../components/contact-link";
 import {Email} from '../components/email';
 import {ICTGroup} from "../components/ictgroup";
 import Timer from "../components/timer";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import homeTranslation from './../public/locale/home.json';
 import commonTranslation from './../public/locale/common.json';
 import {PicnicLink} from "../components/picnic-link";
+import {setToastShowed} from "../state/toast/toastSlice";
 
 
 const Page = () => {
     const currentLocale = useSelector((state) => state.language.locale);
+    const toastShowed = useSelector((state) => state.toast.toastShowed);
+    const dispatch = useDispatch();
+    const toast = useToast();
+
+
+    useEffect(() => {
+        if (!toastShowed) {
+            toast({
+                title: homeTranslation[currentLocale].tip,
+                position: 'top-right',
+                description: homeTranslation[currentLocale].tip_description,
+                status: 'warning',
+                duration: 8000,
+                isClosable: true,
+                icon: <SettingsIcon />,
+                containerStyle: {
+                    display: "flex",
+                    alignContent: "center",
+                },
+                onCloseComplete: () => {
+                    dispatch(setToastShowed());
+                }
+            });
+        }
+    }, []);
 
     return (
         <Layout>
