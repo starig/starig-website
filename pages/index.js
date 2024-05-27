@@ -37,6 +37,7 @@ const Page = () => {
                 containerStyle: {
                     display: "flex",
                     alignContent: "center",
+                    maxWidth: "400px",
                 },
                 onCloseComplete: () => {
                     dispatch(setToastShowed());
