@@ -44,7 +44,7 @@ const Page = () => {
                 }
             });
         }
-    }, []);
+    }, [toastShowed]);
 
     return (
         <Layout>
