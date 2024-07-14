@@ -62,55 +62,7 @@ const Works = () => {
                 'Next,',
                 'MUI',
             ]
-        },
-        {
-            id: 'react-pizza',
-            demoUrl: `http://react-pizza.edelen.ru/`,
-            title: 'React Pizza',
-            thumbnail: pizzaThumbnail,
-            desc: worksTranslation[currentLocale].reactPizza.subtitle,
-            skills: [
-                'React,',
-                'TypeScript,',
-                'Redux-Toolkit',
-            ]
-        },
-        {
-            id: 'starig-deck',
-            demoUrl: `https://starig.github.io/starig-deck/`,
-            title: 'starig deck',
-            thumbnail: deckThumbnail,
-            desc: worksTranslation[currentLocale].starigDeck.subtitle,
-            skills: [
-                'React,',
-                'Redux-Toolkit,',
-                'TypeScript',
-            ]
-        },
-        {
-            id: 'react-beer',
-            demoUrl: `https://starig.github.io/react-beer/`,
-            title: 'React Beer',
-            thumbnail: beerThumbnail,
-            desc: worksTranslation[currentLocale].reactBeer.subtitle,
-            skills: [
-                'React,',
-                'GitHub Pages,',
-                'Redux-Toolkit',
-            ]
-        },
-        {
-            id: 'react-justice',
-            demoUrl: `http://justice-crm.edelen.ru/`,
-            title: 'Justice CRM',
-            thumbnail: justiceThumbnail,
-            desc: worksTranslation[currentLocale].justiceCRM.subtitle,
-            skills: [
-                'React,',
-                'React Charts,',
-                'Redux',
-            ]
-        },
+        }
     ]
     return (
         <Layout>
