@@ -31,7 +31,7 @@ const Page = () => {
                 position: 'top-right',
                 description: homeTranslation[currentLocale].tip_description,
                 status: 'warning',
-                duration: 8000,
+                duration: 3500,
                 isClosable: true,
                 icon: <SettingsIcon />,
                 containerStyle: {
