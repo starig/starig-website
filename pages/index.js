@@ -32,7 +32,7 @@ const Page = () => {
                 description: homeTranslation[currentLocale].tip_description,
                 status: 'warning',
                 duration: 3500,
-                isClosable: true,
+                isClosable: false,
                 icon: <SettingsIcon />,
                 containerStyle: {
                     display: "flex",
