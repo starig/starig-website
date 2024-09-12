@@ -9,28 +9,16 @@
       "description": "социальная сеть с >2 миллионами пользователей. Приложение имеет в себе ленту с постами (видео, мемы, опросы, текстовые посты), созданными пользователями. Так же, в приложении присутствуют сообщества по интересам, в которых можно публиковать тематический контент и заводить новых друзей."
     },
     "digitalUb": {
-      "subtitle": "Коммерческий проект в компании ICT Group.",
+      "subtitle": "Приложение для столици Монголии",
       "description": "комплексное приложение для жителей столицы. Информационно-технологическое решение, интегрирующее все остальные системы столицы и обеспечивающее полноценную связь государства и граждан в режиме реального времени."
     },
     "digitalProvince": {
-      "subtitle": "Коммерческий проект в компании ICT Group.",
+      "subtitle": "Приложение для провинций Монголии",
       "description": "это ряд мобильных сервисов для монгольсих провинций. В каждой провинции будет платформа, которая содержит множество сервисов и функций для упрощения удовлетворения повседневных потребностей."
     },
     "chestAi": {
-      "subtitle": "Коммерческий проект в компании ICT Group.",
+      "subtitle": "Приложение для мед. работников.",
       "description": "это первый в Монголии продукт на основе искусственного интеллекта для обнаружения патологических изменений в рентгеновских изображениях грудной клетки на основе данных рентгенографии грудной клетки в Монголии."
-    },
-    "reactPizza": {
-      "subtitle": "React Pizza курс по React JS"
-    },
-    "starigDeck": {
-      "subtitle": "Тестовое задание."
-    },
-    "reactBeer": {
-      "subtitle": "Тестовое задание."
-    },
-    "justiceCRM": {
-      "subtitle": "Тестовое задание."
     }
   },
   "en": {
@@ -43,28 +31,16 @@
       "description": "a social network with over 2 million users. The app features a feed of user-generated posts including videos, memes, polls, and text-based posts. Additionally, the app includes interest-based communities where users can share thematic content and make new friends."
     },
     "digitalUb": {
-      "subtitle": "A commercial project at ICT Group.",
+      "subtitle": "An app for the capital city of Mongolia",
       "description": "a comprehensive application for the residents of the capital city. It is an information technology solution that integrates all other systems of the capital and ensures real-time communication between the government and citizens."
     },
     "digitalProvince": {
-      "subtitle": "A commercial project at ICT Group.",
+      "subtitle": "An app for provinces on Mongolia",
       "description": "a series of mobile services for Mongolian provinces. Each province will have a platform that contains multiple services and functions to simplify the satisfaction of everyday needs."
     },
     "chestAi": {
-      "subtitle": "A commercial project at ICT Group.",
+      "subtitle": "An app for medical usages in Mongolia",
       "description": "the first product in Mongolia based on artificial intelligence for detecting pathological changes in chest X-ray images using chest X-ray data in Mongolia."
-    },
-    "reactPizza": {
-      "subtitle": "React JS Course."
-    },
-    "starigDeck": {
-      "subtitle": "Test task."
-    },
-    "reactBeer": {
-      "subtitle": "Test task."
-    },
-    "justiceCRM": {
-      "subtitle": "Test task."
     }
   }
 }

@@ -1,7 +1,6 @@
 import {Button, IconButton, useColorModeValue} from "@chakra-ui/react";
 import {DownloadIcon} from "@chakra-ui/icons";
 import {AnimatePresence, motion,} from "framer-motion";
-import {useSelector} from "react-redux";
 
 
 const DownloadCvButton = ({text}) => {
@@ -13,7 +12,7 @@ const DownloadCvButton = ({text}) => {
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'CV_eu.pdf';
+                alink.download = 'Ivan Starkov CV.pdf';
                 alink.click();
             })
         })
@@ -31,7 +30,7 @@ const DownloadCvButton = ({text}) => {
                                    colorScheme={useColorModeValue('purple', 'orange')}
                                    rightIcon={<DownloadIcon/>}
                                    onClick={downloadCV}>Download CV</Button>
-                        : <IconButton aria-label={'Toggle theme'}
+                        : <IconButton aria-label={'Download CV'}
                             /* eslint-disable-next-line react-hooks/rules-of-hooks */
                                       colorScheme={useColorModeValue('purple', 'orange')}
                                      icon={<DownloadIcon/>}

@@ -1,4 +1,4 @@
-import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
+import {Box, Button, Container, Heading, SimpleGrid, useColorModeValue} from "@chakra-ui/react";
 import Section from "../components/section";
 import {WorkGridItem} from "../components/grid-item";
 import chestAIThumbnail from '../public/images/chest-ai.png';
@@ -9,6 +9,8 @@ import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
 import worksTranslation from "../public/locale/works.json";
+import NextLink from "next/link";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
 
 const Works = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -25,11 +27,12 @@ const Works = () => {
                 'BloC',
             ]
         },
+
         {
-            id: 'digital-ub',
-            title: 'Digital UB',
-            thumbnail: digitalUBThumbnail,
-            desc: worksTranslation[currentLocale].digitalUb.subtitle,
+            id: 'digital-uvs',
+            title: 'Digital Province',
+            thumbnail: digitalUvsThumbnail,
+            desc: worksTranslation[currentLocale].digitalProvince.subtitle,
             skills: [
                 'Flutter,',
                 'Dart,',
@@ -37,10 +40,10 @@ const Works = () => {
             ]
         },
         {
-            id: 'digital-uvs',
-            title: 'Digital Province',
-            thumbnail: digitalUvsThumbnail,
-            desc: worksTranslation[currentLocale].digitalProvince.subtitle,
+            id: 'digital-ub',
+            title: 'Digital UB',
+            thumbnail: digitalUBThumbnail,
+            desc: worksTranslation[currentLocale].digitalUb.subtitle,
             skills: [
                 'Flutter,',
                 'Dart,',
@@ -79,6 +82,15 @@ const Works = () => {
                         </Section>)
                     }
                 </SimpleGrid>
+                <Box align={'center'} my={4}>
+                    <NextLink href={'/'}>
+                        <Button leftIcon={<ChevronLeftIcon/>}
+                                bg={useColorModeValue('#F56565', '#E53E3E')}
+                                _hover={{backgroundColor: useColorModeValue('#f53737', '#414141')}}>
+                            {worksTranslation[currentLocale].goBack}
+                        </Button>
+                    </NextLink>
+                </Box>
             </Container>
         </Layout>
     )
