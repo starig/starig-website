@@ -17,6 +17,17 @@ const Works = () => {
 
     const works = [
         {
+            id: 'comet',
+            title: 'Comet',
+            thumbnail: picnicThumbnail,
+            desc: worksTranslation[currentLocale].picnic.subtitle,
+            skills: [
+                'Flutter,',
+                'Dart,',
+                'BloC',
+            ]
+        },
+        {
             id: 'picnic',
             title: 'Picnic',
             thumbnail: picnicThumbnail,

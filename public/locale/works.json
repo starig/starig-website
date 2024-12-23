@@ -4,6 +4,10 @@
     "tech_stack": "Стек технологий:",
     "about_project": "Про проект:",
     "goBack": "Вернуться назад",
+    "comet": {
+      "subtitle": "Игровая платформа Comet",
+      "description": "игровая платформа с интеграцией ИИ. В этом мобильном приложении можно было посмотреть каталог созданных игр, с помощью Comet и поиграть в них. Так же, можно было кастомизировать своего персонажа, за которого пользователь играл в игры."
+    },
     "picnic": {
       "subtitle": "Приложение Picnic",
       "description": "социальная сеть с >2 миллионами пользователей. Приложение имеет в себе ленту с постами (видео, мемы, опросы, текстовые посты), созданными пользователями. Так же, в приложении присутствуют сообщества по интересам, в которых можно публиковать тематический контент и заводить новых друзей."
@@ -26,6 +30,10 @@
     "tech_stack": "Tech Stack:",
     "about_project": "About the Project:",
     "goBack": "Go back",
+    "comet": {
+      "subtitle": "Comet Gaming Platform",
+      "description": "A gaming platform integrated with AI. In this mobile application, users can browse a catalog of games created with Comet and play them. Additionally, they can customize their character, which they use to play the games."
+    },
     "picnic": {
       "subtitle": "Picnic application",
       "description": "a social network with over 2 million users. The app features a feed of user-generated posts including videos, memes, polls, and text-based posts. Additionally, the app includes interest-based communities where users can share thematic content and make new friends."
