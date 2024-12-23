@@ -1,8 +1,7 @@
-import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage, WorkVideo} from "../../components/work";
+import {Badge, Box, Button, Container, Heading, useColorModeValue} from "@chakra-ui/react";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
+import {Title, WorkVideo} from "../../components/work";
 import Layout from "../../components/layouts/article";
-import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
