@@ -27,7 +27,6 @@ const Works = () => {
                 'BloC',
             ]
         },
-
         {
             id: 'digital-uvs',
             title: 'Digital Province',

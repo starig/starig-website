@@ -1,6 +1,6 @@
 import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
 import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {Meta, Title, WorkImage, WorkVideo} from "../../components/work";
 import Layout from "../../components/layouts/article";
 import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
@@ -18,58 +18,49 @@ const Work = () => {
         <Layout title={'Comet'}>
             <Container>
                 <Title>
-                    Digital UB <Badge>2023</Badge>
+                    Comet <Badge>2023-2024</Badge>
                 </Title>
                 <>
-                    <WorkImage src={'/images/smartub.png'} alt={'Digital UB'}/>
+                    <WorkVideo src={'https://6h4j6b6j67es6lxu.public.blob.vercel-storage.com/comet-sLeXBpbehegQJAQtKIpvDmu0NJ0DSZ.mp4'} alt={'Comet'}/>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
-                            <BioSkill>Flutter</BioSkill>
+                            <BioSkill>Swift</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Dart</BioSkill>
+                            <BioSkill>SwiftUI</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>BloC (Cubit)</BioSkill>
+                            <BioSkill>MVVM</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>dio</BioSkill>
+                            <BioSkill>GraphQl</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Freezed</BioSkill>
-                        </li>
-                        <li>
-                            <BioSkill>Clean Architecture</BioSkill>
-                        </li>
-                        <li>
-                            <BioSkill>Rest API</BioSkill>
-                        </li>
-                        <li>
-                            <BioSkill>Swagger</BioSkill>
+                            <BioSkill>SceneKit</BioSkill>
                         </li>
                     </Stack>
                 </>
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
-                        <b>Digital UB</b> — {worksTranslation[currentLocale].digitalUb.description}
+                        <b>Comet</b> — {worksTranslation[currentLocale].comet.description}
                     </Paragraph>
                 </Section>
-                <List>
-                    <ListItem>
-                        <Meta>App Store</Meta>
-                        <WorkLink href={'https://apps.apple.com/lv/app/digital-ub/id6443485509'} target="_blank">
-                            App Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Google Play Store</Meta>
-                        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ictgroup.smartub'} target="_blank">
-                            Google Play Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                </List>
+                {/*<List>*/}
+                {/*    <ListItem>*/}
+                {/*        <Meta>App Store</Meta>*/}
+                {/*        <WorkLink href={'https://apps.apple.com/lv/app/digital-ub/id6443485509'} target="_blank">*/}
+                {/*            App Store <ExternalLinkIcon mx={'2px'}/>*/}
+                {/*        </WorkLink>*/}
+                {/*    </ListItem>*/}
+                {/*    <ListItem>*/}
+                {/*        <Meta>Google Play Store</Meta>*/}
+                {/*        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ictgroup.smartub'} target="_blank">*/}
+                {/*            Google Play Store <ExternalLinkIcon mx={'2px'}/>*/}
+                {/*        </WorkLink>*/}
+                {/*    </ListItem>*/}
+                {/*</List>*/}
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}
