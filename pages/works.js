@@ -5,6 +5,7 @@ import chestAIThumbnail from '../public/images/chest-ai.png';
 import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import digitalUBThumbnail from '../public/images/smartub.png';
 import picnicThumbnail from '../public/images/picnic.png';
+import cometThumbnail from '../public/images/comet.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -19,12 +20,12 @@ const Works = () => {
         {
             id: 'comet',
             title: 'Comet',
-            thumbnail: picnicThumbnail,
-            desc: worksTranslation[currentLocale].picnic.subtitle,
+            thumbnail: cometThumbnail,
+            desc: worksTranslation[currentLocale].comet.subtitle,
             skills: [
-                'Flutter,',
-                'Dart,',
-                'BloC',
+                'Swift,',
+                'SwiftUI,',
+                'SceneKit',
             ]
         },
         {

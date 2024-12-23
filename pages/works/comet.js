@@ -21,7 +21,9 @@ const Work = () => {
                     Comet <Badge>2023-2024</Badge>
                 </Title>
                 <>
-                    <WorkVideo src={'https://6h4j6b6j67es6lxu.public.blob.vercel-storage.com/comet-sLeXBpbehegQJAQtKIpvDmu0NJ0DSZ.mp4'} alt={'Comet'}/>
+                    <WorkVideo
+                        src={'https://6h4j6b6j67es6lxu.public.blob.vercel-storage.com/comet-sLeXBpbehegQJAQtKIpvDmu0NJ0DSZ.mp4'}
+                        alt={'Comet'}/>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
