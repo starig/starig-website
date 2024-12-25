@@ -44,7 +44,7 @@ const Work = () => {
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
-                        <b>Corgi</b> — {worksTranslation[currentLocale].tadpole.description}
+                        <b>Tadpole</b> — {worksTranslation[currentLocale].tadpole.description}
                     </Paragraph>
                 </Section>
                 <List>
