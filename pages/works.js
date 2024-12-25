@@ -6,6 +6,8 @@ import digitalUvsThumbnail from '../public/images/digital-uvs.png';
 import digitalUBThumbnail from '../public/images/smartub.png';
 import picnicThumbnail from '../public/images/picnic.png';
 import cometThumbnail from '../public/images/comet.png';
+import corgiThumbnail from '../public/images/corgi.png';
+import tadpoleThumbnail from '../public/images/tadpole.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -17,6 +19,26 @@ const Works = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
     const works = [
+        {
+            id: 'corgi',
+            title: 'Corgi',
+            thumbnail: corgiThumbnail,
+            desc: worksTranslation[currentLocale].corgi.subtitle,
+            skills: [
+                'TypeScript,',
+                'Angular'
+            ]
+        },
+        {
+            id: 'tadpole',
+            title: 'Tadpole',
+            thumbnail: tadpoleThumbnail,
+            desc: worksTranslation[currentLocale].tadpole.subtitle,
+            skills: [
+                'TypeScript,',
+                'Angular'
+            ]
+        },
         {
             id: 'comet',
             title: 'Comet',

@@ -4,6 +4,14 @@
     "tech_stack": "Стек технологий:",
     "about_project": "Про проект:",
     "goBack": "Вернуться назад",
+    "corgi": {
+      "subtitle": "Страховое приложение Corgi",
+      "description": "Агрегатор страховых компаний Corgi с интеграцией ИИ. Стартап-проект, который получил $5,000,000 на первом раунде инвестиций. С помощью этого приложения пользователи могут выбирать лучшие страховые компании для своего жилья, питомцев или сотрудников."
+    },
+    "tadpole": {
+      "subtitle": "Оптимизация AWS — Tadpole",
+      "description": "Система, которая позволяет оптимизировать затраты на AWS для бизнеса. Приложение представляет собой дашборд, к которому можно подключить свой AWS-аккаунт. Система анализирует расходы и мощности, необходимые для выполнения задач, и предоставляет рекомендации по оптимизации затрат."
+    },
     "comet": {
       "subtitle": "Игровая платформа Comet",
       "description": "игровая платформа с интеграцией ИИ. В этом мобильном приложении можно было посмотреть каталог созданных игр, с помощью Comet и поиграть в них. Так же, можно было кастомизировать своего персонажа, за которого пользователь играл в игры."
@@ -30,6 +38,14 @@
     "tech_stack": "Tech Stack:",
     "about_project": "About the Project:",
     "goBack": "Go back",
+    "corgi": {
+      "subtitle": "Corgi Insurance Application",
+      "description": "Corgi is an aggregator of insurance companies with AI integration. This startup project raised $5,000,000 during the first round of investments. With this application, users can select the best insurance companies for their homes, pets, or employees."
+    },
+    "tadpole": {
+      "subtitle": "AWS Optimization — Tadpole",
+      "description": "A system that helps businesses optimize AWS costs. The application is a dashboard where users can connect their AWS account. It analyzes expenses and the resources required for tasks and provides recommendations for cost optimization."
+    },
     "comet": {
       "subtitle": "Comet Gaming Platform",
       "description": "A gaming platform integrated with AI. In this mobile application, users can browse a catalog of games created with Comet and play them. Additionally, they can customize their character, which they use to play the games."
