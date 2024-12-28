@@ -20,7 +20,7 @@ import ThemeToggleButton from "../components/theme-toggle-button";
 import WorkLink from "./work-link";
 import {AiFillHome} from "react-icons/ai";
 import {MdOutlineWork} from "react-icons/md";
-import {FaGithub, FaTelegram} from "react-icons/fa";
+import {FaGithub, FaLinkedinIn, FaTelegram} from "react-icons/fa";
 import DownloadCvButton from "./download-cv-button";
 import LanguageToggleButton from "./language-toggle-button";
 import {useSelector} from "react-redux";
@@ -147,6 +147,9 @@ const Navbar = props => {
                                     </NextLink>
                                     <NextLink href={'https://github.com/starig'} passHref>
                                         <MenuItem as={Link} icon={<FaGithub/>}>GitHub</MenuItem>
+                                    </NextLink>
+                                    <NextLink href={'https://www.linkedin.com/in/ivan-starkov-35456820a/'} passHref>
+                                        <MenuItem as={Link} icon={<FaLinkedinIn/>}>LinkedIn</MenuItem>
                                     </NextLink>
                                     <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View
                                         Source</MenuItem>
