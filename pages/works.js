@@ -7,7 +7,7 @@ import digitalUBThumbnail from '../public/images/smartub.png';
 import picnicThumbnail from '../public/images/picnic.png';
 import cometThumbnail from '../public/images/comet.png';
 import corgiThumbnail from '../public/images/corgi.png';
-import tadpoleThumbnail from '../public/images/tadpole.png';
+import newtifyThumbnail from '../public/images/newtify.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -20,20 +20,23 @@ const Works = () => {
 
     const works = [
         {
-            id: 'corgi',
-            title: 'Corgi',
-            thumbnail: corgiThumbnail,
-            desc: worksTranslation[currentLocale].corgi.subtitle,
+            id: 'newtify',
+            title: 'Newtify',
+            productUrl: `https://newtify.io/`,
+            thumbnail: newtifyThumbnail,
+            desc: worksTranslation[currentLocale].newtify.subtitle,
             skills: [
-                'TypeScript,',
-                'Angular'
+                'Dart,',
+                'Flutter,',
+                'Web3'
             ]
         },
         {
-            id: 'tadpole',
-            title: 'Tadpole',
-            thumbnail: tadpoleThumbnail,
-            desc: worksTranslation[currentLocale].tadpole.subtitle,
+            id: 'corgi',
+            title: 'Corgi',
+            productUrl: `https://www.corgi.insure/`,
+            thumbnail: corgiThumbnail,
+            desc: worksTranslation[currentLocale].corgi.subtitle,
             skills: [
                 'TypeScript,',
                 'Angular'

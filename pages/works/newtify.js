@@ -15,49 +15,58 @@ const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
     return (
-        <Layout title={'Tadpole'}>
+        <Layout title={'Newtify'}>
             <Container>
                 <Title>
-                    Tadpole <Badge>2024</Badge>
+                    Newtify <Badge>2025</Badge>
                 </Title>
                 <>
-                    <WorkImage src={'/images/tadpole.png'} alt={'Tadpole'}/>
+                    <WorkImage src={'/images/newtify.png'} alt={'Newtify'}/>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
                         <li>
-                            <BioSkill>Angular</BioSkill>
+                            <BioSkill>Dart</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>TypeScript</BioSkill>
+                            <BioSkill>Flutter</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Rest API</BioSkill>
+                            <BioSkill>BloC</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Clean Architecture</BioSkill>
+                            <BioSkill>Retrofit</BioSkill>
                         </li>
                         <li>
                             <BioSkill>DI</BioSkill>
+                        </li>
+                        <li>
+                            <BioSkill>Appodeal</BioSkill>
                         </li>
                     </Stack>
                 </>
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
-                        <b>Tadpole</b> — {worksTranslation[currentLocale].tadpole.description}
+                        <b>Newtify</b> — {worksTranslation[currentLocale].newtify.description}
                     </Paragraph>
                 </Section>
                 <List>
                     <ListItem>
-                        <Meta>Website</Meta>
-                        <WorkLink href={'https://www.tadpole.so/'} target="_blank">
-                            Landing page <ExternalLinkIcon mx={'2px'}/>
+                        <Meta>App Store</Meta>
+                        <WorkLink href={'https://apps.apple.com/us/app/newtify-io/id6482849312'} target="_blank">
+                            App Store <ExternalLinkIcon mx={'2px'}/>
+                        </WorkLink>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>Google Play Store</Meta>
+                        <WorkLink href={'https://play.google.com/store/apps/details?id=io.newtify.app'} target="_blank">
+                            Google Play Store <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <WorkLink href={'https://app.tadpole.so/'} target="_blank">
-                            Dashboard <ExternalLinkIcon mx={'2px'}/>
+                        <WorkLink href={'https://newtify.io/'} target="_blank">
+                            Website <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                 </List>

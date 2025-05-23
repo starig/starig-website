@@ -50,8 +50,14 @@ const Work = () => {
                 <List>
                     <ListItem>
                         <Meta>Website</Meta>
-                        <WorkLink href={'https://www.corgi.insure/old-home-2'} target="_blank">
+                        <WorkLink href={'https://www.corgi.insure/'} target="_blank">
                             Landing page <ExternalLinkIcon mx={'2px'}/>
+                        </WorkLink>
+                    </ListItem>
+                    <ListItem>
+                        <Meta>LinkedIn</Meta>
+                        <WorkLink href={'https://www.linkedin.com/company/corgiinsurance/'} target="_blank">
+                            LinkedIn <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                 </List>
