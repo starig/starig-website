@@ -12,7 +12,7 @@ const DownloadCvButton = ({text}) => {
                 // Setting various property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'Ivan Starkov CV.pdf';
+                alink.download = 'Ivan_Starkov_Flutter_CV.pdf';
                 alink.click();
             })
         })
