@@ -22,6 +22,11 @@ export const BioSkill = styled.b`
 color: #fc5252;
 `
 
+export const BioPlatform = styled.span`
+    color: #fc5252;
+    font-weight: bold;
+`
+
 export const SkillsList = styled.ul`
 padding-left: 2.4em;
 `

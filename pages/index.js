@@ -4,7 +4,7 @@ import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from "next/link";
 import {ChevronRightIcon, EmailIcon, SettingsIcon} from "@chakra-ui/icons";
-import {BioSection, BioSkill, BioText, BioYear, SkillsList} from "../components/bio";
+import {BioPlatform, BioSection, BioSkill, BioText, BioYear, SkillsList} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {ContactLink} from "../components/contact-link";
 import {Email} from '../components/email';
@@ -143,19 +143,43 @@ const Page = () => {
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
+                        <BioYear>{homeTranslation[currentLocale].at2023}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].at2023_1}
+                            <ICTGroup href={'https://basketent.com/'} target="_blank">
+                                Basket Entertainment
+                            </ICTGroup>
+                            {homeTranslation[currentLocale].at2023_2} </BioText>
+                        <BioText>{homeTranslation[currentLocale].at2023_3}</BioText>
                         <BioText>
-                            {homeTranslation[currentLocale].currently_1}
-                            <PicnicLink href={'https://picnic.zone/'} target="_blank">
-                                Picnic
-                            </PicnicLink>
-                            {homeTranslation[currentLocale].currently_2}
+                            <SkillsList>
+                                <li><BioSkill>Dart</BioSkill></li>
+                                <li><BioSkill>Flutter</BioSkill></li>
+                                <li><BioSkill>Swift</BioSkill></li>
+                                <li><BioSkill>SwiftUI</BioSkill></li>
+                                <li><BioSkill>TypeScript</BioSkill></li>
+                                <li><BioSkill>Angular</BioSkill></li>
+                            </SkillsList>
+                        </BioText>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].currently_1}
+                            <BioPlatform>Android</BioPlatform>{", "}
+                            <BioPlatform>iOS</BioPlatform>{", "}
+                            <BioPlatform>Web</BioPlatform>{", "}
+                            <BioPlatform>macOS</BioPlatform>{", "}
+                            <BioPlatform>Linux</BioPlatform>{", "}
+                            <BioPlatform>Windows</BioPlatform>
+                        </BioText>
+
+                        <BioText> {homeTranslation[currentLocale].currently_2}</BioText>
+                        <BioText>
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
                                 <li><BioSkill>BloC</BioSkill></li>
                                 <li><BioSkill>Cubit</BioSkill></li>
-                                <li><BioSkill>GraphQl</BioSkill></li>
+                                <li><BioSkill>REST Api</BioSkill></li>
                                 <li><BioSkill>Clean Architecture</BioSkill></li>
                                 <li><BioSkill>DI</BioSkill></li>
                                 <li><BioSkill>flutter_gen</BioSkill></li>
