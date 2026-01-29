@@ -12,8 +12,8 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width-device-width, initial-scale=1"/>
                 <meta name='title' content='Ivan Starkov'/>
                 <meta name="description"
-                      content="Иван Старков - Гений, тысячионер, плейбой, филантроп. Один из лучших программистов мира согласно исследованиям за 2023 год."/>
-                <meta name='keywords' content={'starig, STARIG, Starkov Ivan, Старков Иван, Старков, frontend, flutter developer, flutter mobile, Иван Старков, иван старков, старков иван'}/>
+                      content="Иван Старков - Гений, тысячионер, плейбой, филантроп. Один из лучших программистов мира согласно исследованиям за 2025 год."/>
+                <meta name='keywords' content={'starig, STARIG, Starkov Ivan, Старков Иван, Старков, frontend, flutter developer, flutter mobile, Иван Старков, иван старков, старков иван, flutter разработчик, флаттер разработчик'}/>
                 <meta name="google-site-verification" content="L3A06pEhVNAFLonseNimA_xYExquRnbAeu3oqGkiORM"/>
                 <title>Иван Старков - Homepage</title>
             </Head>
