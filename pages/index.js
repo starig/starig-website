@@ -68,7 +68,7 @@ const Page = () => {
                     <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align={'center'}>
                         <Image borderColor={'whiteAlpha.800'} borderWidth={2} borderStyle={'solid'}
                                maxWidth={'100px'}
-                               display={'inline-block'} borderRadius='full' src={'/images/starig.jpg'}
+                               display={'inline-block'} borderRadius='full' src={'/images/starig.jpeg'}
                                alt={'Profile Image'}/>
                     </Box>
                 </Grid>
