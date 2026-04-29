@@ -20,7 +20,7 @@ const Work = () => {
                 <Title>
                     Digital UB <Badge>2023</Badge>
                 </Title>
-                <>
+                <Section>
                     <WorkImage src={'/images/smartub.png'} alt={'Digital UB'}/>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
@@ -49,7 +49,13 @@ const Work = () => {
                             <BioSkill>Swagger</BioSkill>
                         </li>
                     </Stack>
-                </>
+                </Section>
+                <Section>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].platforms}</Heading>
+                    <Paragraph>
+                        <Badge>iOS</Badge> <Badge>Android</Badge>
+                    </Paragraph>
+                </Section>
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>

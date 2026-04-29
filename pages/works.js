@@ -8,6 +8,7 @@ import picnicThumbnail from '../public/images/picnic.png';
 import cometThumbnail from '../public/images/comet.png';
 import corgiThumbnail from '../public/images/corgi.png';
 import newtifyThumbnail from '../public/images/newtify.png';
+import workspaceThumbnail  from '../public/images/workspace.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -19,6 +20,16 @@ const Works = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
     const works = [
+        {
+            id: 'workspace',
+            title: 'Workspace',
+            thumbnail: workspaceThumbnail,
+            desc: worksTranslation[currentLocale].workspace.subtitle,
+            skills: [
+                'Dart,',
+                'Flutter'
+            ]
+        },
         {
             id: 'newtify',
             title: 'Newtify',

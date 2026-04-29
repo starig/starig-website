@@ -4,6 +4,11 @@
     "tech_stack": "Стек технологий:",
     "about_project": "Про проект:",
     "goBack": "Вернуться назад",
+    "platforms": "Платформы:",
+    "workspace": {
+      "subtitle": "Кроссплатформенное рабочее пространство",
+      "description": "Кросплатформенное рабочее пространство, включающее в себя: мессенджер, календарь и почту. В команде я был единственным Flutter разработчиком, полностью заложил архитектуру проекта, выбрал стек и довел приложение до стадии MVP. Приложение полноценно реализует функциональность мессенджера: Отправка сообщений, реакции, редактирование/удаление, пересылка/ответ/мульти-селект. Так же, приложение поддерживает просмотр и отправку медиа: Видео, аудио, изображения."
+    },
     "newtify": {
       "subtitle": "Криптопроект Newtify",
       "description": "Геймифицированный Web3 проект, который позволяет читать актуальные новости из мира криптовалюты и получать за это токены."
@@ -38,6 +43,11 @@
     "tech_stack": "Tech Stack:",
     "about_project": "About the Project:",
     "goBack": "Go back",
+    "platforms": "Platforms:",
+    "workspace": {
+      "subtitle": "Cross-Platform Workspace Solution",
+      "description": "A cross-platform workspace that includes a messenger, calendar, and mail. I was the sole Flutter developer on the team, fully responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application fully implements core messaging functionality: sending messages, reactions, editing/deleting, forwarding/replying/multi-select. It also supports viewing and sending media, including video, audio, and images."
+    },
     "newtify": {
       "subtitle": "Newtify Crypto Project",
       "description": "A gamified Web3 project that allows you to read the latest cryptocurrency news and earn tokens for it."

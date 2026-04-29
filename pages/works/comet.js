@@ -19,7 +19,7 @@ const Work = () => {
                 <Title>
                     Comet <Badge>2023-2024</Badge>
                 </Title>
-                <>
+                <Section>
                     <WorkVideo
                         src={'https://6h4j6b6j67es6lxu.public.blob.vercel-storage.com/comet-sLeXBpbehegQJAQtKIpvDmu0NJ0DSZ.mp4'}
                         alt={'Comet'}/>
@@ -41,7 +41,7 @@ const Work = () => {
                             <BioSkill>SceneKit</BioSkill>
                         </li>
                     </Stack>
-                </>
+                </Section>
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>

@@ -163,7 +163,11 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
-                        <BioText>{homeTranslation[currentLocale].currently_1}
+                        <BioText>{homeTranslation[currentLocale].currently_1} <ICTGroup href={'https://genesis-corporation.ru/'} target="_blank">
+                            Genesis
+                        </ICTGroup> {homeTranslation[currentLocale].currently_2}</BioText>
+                        <BioText>
+                            {homeTranslation[currentLocale].currently_3}
                             <BioPlatform>Android</BioPlatform>{", "}
                             <BioPlatform>iOS</BioPlatform>{", "}
                             <BioPlatform>Web</BioPlatform>{", "}
@@ -172,7 +176,7 @@ const Page = () => {
                             <BioPlatform>Windows</BioPlatform>
                         </BioText>
 
-                        <BioText> {homeTranslation[currentLocale].currently_2}</BioText>
+                        <BioText> {homeTranslation[currentLocale].currently_4}</BioText>
                         <BioText>
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>

@@ -20,7 +20,7 @@ const Work = () => {
                 <Title>
                     Newtify <Badge>2025</Badge>
                 </Title>
-                <>
+                <Section>
                     <WorkImage src={'/images/newtify.png'} alt={'Newtify'}/>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].tech_stack}</Heading>
                     <Stack>
@@ -43,7 +43,13 @@ const Work = () => {
                             <BioSkill>Appodeal</BioSkill>
                         </li>
                     </Stack>
-                </>
+                </Section>
+                <Section>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].platforms}</Heading>
+                    <Paragraph>
+                        <Badge>iOS</Badge> <Badge>Android</Badge>
+                    </Paragraph>
+                </Section>
                 <Section>
                     <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].about_project}</Heading>
                     <Paragraph>
