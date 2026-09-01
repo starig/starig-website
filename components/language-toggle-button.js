@@ -1,20 +1,15 @@
 import { useColorModeValue, Button} from "@chakra-ui/react";
 import {AnimatePresence, motion,} from "framer-motion";
 import Flag from "react-world-flags";
-import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setLanguage} from "../state/language/languageSlice";
 
 
 const LanguageToggleButton = () => {
-    const languageState = useSelector((state) => state.language)
+    const currentLocale = useSelector((state) => state.language.locale)
     const dispatch = useDispatch();
 
-    const [isRus, setIsRus] = useState(languageState.locale === 'ru');
-
-    const toggleLanguage = () => {
-        setIsRus(!isRus);
-    }
+    const isRus = currentLocale === 'ru';
     const changeLanguage = (language) => {
         dispatch(setLanguage(language));
     }
@@ -32,7 +27,6 @@ const LanguageToggleButton = () => {
                         } else {
                             changeLanguage('ru');
                         }
-                        toggleLanguage();
                     }}>
                 <motion.div
                     animate={{ rotateY: isRus ? 180 : 0 }}

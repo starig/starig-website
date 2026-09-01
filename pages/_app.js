@@ -6,6 +6,7 @@ import Fonts from '../components/fonts';
 import { Analytics } from '@vercel/analytics/react';
 import {Provider} from "react-redux";
 import store from "../state/store";
+import LanguageDetector from "../components/language-detector";
 
 if (typeof window !== 'undefined') {
     window.history.scrollRestoration = 'manual'
@@ -14,6 +15,7 @@ if (typeof window !== 'undefined') {
 const Website = ({Component, pageProps, router}) => {
     return (
         <Provider store={store}>
+            <LanguageDetector/>
             <ChakraProvider theme={theme}>
                 <Analytics />
                 <Fonts/>
