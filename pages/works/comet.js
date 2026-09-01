@@ -9,6 +9,7 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
+import ProjectStatusBadge from "../../components/project-status-badge";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -48,20 +49,7 @@ const Work = () => {
                         <b>Comet</b> — {worksTranslation[currentLocale].comet.description}
                     </Paragraph>
                 </Section>
-                {/*<List>*/}
-                {/*    <ListItem>*/}
-                {/*        <Meta>App Store</Meta>*/}
-                {/*        <WorkLink href={'https://apps.apple.com/lv/app/digital-ub/id6443485509'} target="_blank">*/}
-                {/*            App Store <ExternalLinkIcon mx={'2px'}/>*/}
-                {/*        </WorkLink>*/}
-                {/*    </ListItem>*/}
-                {/*    <ListItem>*/}
-                {/*        <Meta>Google Play Store</Meta>*/}
-                {/*        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ictgroup.smartub'} target="_blank">*/}
-                {/*            Google Play Store <ExternalLinkIcon mx={'2px'}/>*/}
-                {/*        </WorkLink>*/}
-                {/*    </ListItem>*/}
-                {/*</List>*/}
+                <ProjectStatusBadge/>
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}

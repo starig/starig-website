@@ -73,6 +73,16 @@ const Work = () => {
                         <b>Workspace</b> — {worksTranslation[currentLocale].workspace.description}
                     </Paragraph>
                 </Section>
+                <Section>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].my_role}</Heading>
+                    {
+                        worksTranslation[currentLocale].workspace.role.map((paragraph) => (
+                            <Paragraph key={paragraph}>
+                                {paragraph}
+                            </Paragraph>
+                        ))
+                    }
+                </Section>
                 <List>
                     <ListItem>
                         <Meta>GitHub</Meta>

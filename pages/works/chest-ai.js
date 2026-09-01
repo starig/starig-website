@@ -1,8 +1,7 @@
-import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {Badge, Box, Button, Container, Heading, useColorModeValue} from "@chakra-ui/react";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
+import {Title, WorkImage} from "../../components/work";
 import Layout from "../../components/layouts/article";
-import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
@@ -10,6 +9,7 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import {useSelector} from "react-redux";
 import worksTranslation from './../../public/locale/works.json';
+import ProjectStatusBadge from "../../components/project-status-badge";
 
 
 const Work = () => {
@@ -42,14 +42,7 @@ const Work = () => {
                         <b>Chest AI</b> — {worksTranslation[currentLocale].chestAi.description}
                     </Paragraph>
                 </Section>
-                <List>
-                    <ListItem>
-                        <Meta>Website</Meta>
-                        <WorkLink href={'https://chest-ai.khamuga.com/'} target="_blank">
-                            https://chest-ai.khamuga.com/ <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                </List>
+                <ProjectStatusBadge/>
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}

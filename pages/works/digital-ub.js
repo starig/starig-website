@@ -1,8 +1,7 @@
-import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {Badge, Box, Button, Container, Heading, useColorModeValue} from "@chakra-ui/react";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
+import {Title, WorkImage} from "../../components/work";
 import Layout from "../../components/layouts/article";
-import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
@@ -10,6 +9,7 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
+import ProjectStatusBadge from "../../components/project-status-badge";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -62,20 +62,7 @@ const Work = () => {
                         <b>Digital UB</b> — {worksTranslation[currentLocale].digitalUb.description}
                     </Paragraph>
                 </Section>
-                <List>
-                    <ListItem>
-                        <Meta>App Store</Meta>
-                        <WorkLink href={'https://apps.apple.com/lv/app/digital-ub/id6443485509'} target="_blank">
-                            App Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Google Play Store</Meta>
-                        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ictgroup.smartub'} target="_blank">
-                            Google Play Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                </List>
+                <ProjectStatusBadge/>
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}

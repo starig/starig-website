@@ -2,13 +2,17 @@
   "ru": {
     "and": "и",
     "demo": "Демо",
+    "downloads": "скачиваний",
     "site": "Сайт",
+    "projectClosed": "Проект закрыт",
     "settings": "Настройки"
   },
   "en": {
     "and": "and",
     "demo": "Demo",
+    "downloads": "downloads",
     "site": "Site",
+    "projectClosed": "Project closed",
     "settings": "Settings"
   }
 }

@@ -3,15 +3,30 @@
     "portfolio": "Портфолио",
     "tech_stack": "Стек технологий:",
     "about_project": "Про проект:",
+    "my_role": "Моя роль:",
     "goBack": "Вернуться назад",
     "platforms": "Платформы:",
     "workspace": {
       "subtitle": "Кроссплатформенное рабочее пространство",
-      "description": "Кросплатформенное рабочее пространство, включающее в себя: мессенджер, календарь и почту. В команде я был единственным Flutter разработчиком, полностью заложил архитектуру проекта, выбрал стек и довел приложение до стадии MVP. Приложение полноценно реализует функциональность мессенджера: Отправка сообщений, реакции, редактирование/удаление, пересылка/ответ/мульти-селект. Так же, приложение поддерживает просмотр и отправку медиа: Видео, аудио, изображения."
+      "description": "Кросплатформенное рабочее пространство, включающее в себя: мессенджер, календарь и почту. В команде я был единственным Flutter разработчиком, полностью заложил архитектуру проекта, выбрал стек и довел приложение до стадии MVP. Приложение полноценно реализует функциональность мессенджера: Отправка сообщений, реакции, редактирование/удаление, пересылка/ответ/мульти-селект. Так же, приложение поддерживает просмотр и отправку медиа: Видео, аудио, изображения.",
+      "role": [
+        "Я был единственным Flutter-разработчиком проекта и полностью самостоятельно создал приложение с нуля. Я спроектировал архитектуру на основе Clean Architecture, выбрал технический стек и организовал ключевые части приложения: навигацию, управление состоянием, внедрение зависимостей, сетевой слой и локальное хранение данных.",
+        "Я реализовал полноценный мессенджер с отправкой, редактированием и удалением сообщений, реакциями, ответами, пересылкой и множественным выбором. Также добавил работу с изображениями, видео и аудио, интегрировал Zulip API и настроил получение обновлений в реальном времени через Long Polling.",
+        "Приложение было адаптировано для iOS, Android, macOS, Windows, Linux и Web. Я отвечал за весь цикл разработки клиентской части — от первоначальной настройки проекта и технических решений до готового MVP."
+      ]
     },
     "newtify": {
       "subtitle": "Криптопроект Newtify",
-      "description": "Геймифицированный Web3 проект, который позволяет читать актуальные новости из мира криптовалюты и получать за это токены."
+      "description": "Геймифицированный Web3 проект, который позволяет читать актуальные новости из мира криптовалюты и получать за это токены.",
+      "role": {
+        "description": "Я присоединился к Newtify, когда приложение уже находилось в production и имело активных пользователей. Я отвечал за развитие и стабилизацию существующего Flutter-приложения, внедрение новых возможностей и устранение критических проблем.",
+        "achievements": [
+          "Добавил локализацию на пять языков, подготовив интерфейс и контент приложения для пользователей из разных стран.",
+          "Интегрировал рекламную платформу Appodeal и настроил показ рекламы. После интеграции приложение начало монетизироваться и приносить доход от рекламных размещений.",
+          "Исправил критический краш в Android-версии приложения. После выпуска исправления конверсия в успешную регистрацию выросла на 45%.",
+          "Работал с production-кодовой базой и выпускал изменения в действующее приложение, сохраняя стабильность существующей функциональности."
+        ]
+      }
     },
     "corgi": {
       "subtitle": "Страховое приложение Corgi",
@@ -42,15 +57,30 @@
     "portfolio": "Portfolio",
     "tech_stack": "Tech Stack:",
     "about_project": "About the Project:",
+    "my_role": "My Role:",
     "goBack": "Go back",
     "platforms": "Platforms:",
     "workspace": {
       "subtitle": "Cross-Platform Workspace Solution",
-      "description": "A cross-platform workspace that includes a messenger, calendar, and mail. I was the sole Flutter developer on the team, fully responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application fully implements core messaging functionality: sending messages, reactions, editing/deleting, forwarding/replying/multi-select. It also supports viewing and sending media, including video, audio, and images."
+      "description": "A cross-platform workspace that includes a messenger, calendar, and mail. I was the sole Flutter developer on the team, fully responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application fully implements core messaging functionality: sending messages, reactions, editing/deleting, forwarding/replying/multi-select. It also supports viewing and sending media, including video, audio, and images.",
+      "role": [
+        "I was the project’s sole Flutter developer and independently built the application from the ground up. I designed its Clean Architecture foundation, selected the technology stack, and implemented the core application infrastructure, including navigation, state management, dependency injection, networking, and local data storage.",
+        "I developed a full-featured messenger with message sending, editing and deletion, reactions, replies, forwarding, and multi-select functionality. I also implemented image, video, and audio support, integrated the Zulip API, and configured real-time updates using Long Polling.",
+        "The application was adapted for iOS, Android, macOS, Windows, Linux, and Web. I was responsible for the entire client-side development lifecycle—from the initial project setup and technical decisions to delivering a working MVP."
+      ]
     },
     "newtify": {
       "subtitle": "Newtify Crypto Project",
-      "description": "A gamified Web3 project that allows you to read the latest cryptocurrency news and earn tokens for it."
+      "description": "A gamified Web3 project that allows you to read the latest cryptocurrency news and earn tokens for it.",
+      "role": {
+        "description": "I joined Newtify when the application was already in production and had active users. I was responsible for developing and stabilizing the existing Flutter application, introducing new capabilities, and resolving critical issues.",
+        "achievements": [
+          "Added localization for five languages, preparing the application’s interface and content for users across different countries.",
+          "Integrated the Appodeal advertising platform and configured ad delivery. Following the integration, the application began generating revenue through advertising.",
+          "Fixed a critical crash in the Android version of the application. After the fix was released, the successful registration conversion rate increased by 45%.",
+          "Worked with a production codebase and delivered updates to the live application while maintaining the stability of existing functionality."
+        ]
+      }
     },
     "corgi": {
       "subtitle": "Corgi Insurance Application",

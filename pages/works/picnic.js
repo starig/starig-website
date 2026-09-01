@@ -1,8 +1,7 @@
-import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {Badge, Box, Button, Container, Heading, useColorModeValue} from "@chakra-ui/react";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
+import {Title, WorkImage} from "../../components/work";
 import Layout from "../../components/layouts/article";
-import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
@@ -10,6 +9,8 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
+import ProjectStatusBadge from "../../components/project-status-badge";
+import DownloadCountBadge from "../../components/download-count-badge";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -62,20 +63,10 @@ const Work = () => {
                         <b>Picnic</b> — {worksTranslation[currentLocale].picnic.description}
                     </Paragraph>
                 </Section>
-                <List>
-                    <ListItem>
-                        <Meta>App Store</Meta>
-                        <WorkLink href={'https://apps.apple.com/ua/app/picnic-dive-into-communities/id1544626265'} target="_blank">
-                            App Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Google Play Store</Meta>
-                        <WorkLink href={'https://play.google.com/store/apps/details?id=com.ambertech.amber&hl=ru&gl=US'} target="_blank">
-                            Google Play Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                </List>
+                <Box display={'flex'} alignItems={'center'} gap={2} flexWrap={'wrap'}>
+                    <ProjectStatusBadge/>
+                    <DownloadCountBadge count={'2M+'}/>
+                </Box>
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}

@@ -1,8 +1,16 @@
-import {Badge, Box, Button, Container, Heading, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {ChevronLeftIcon, ExternalLinkIcon} from "@chakra-ui/icons";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {
+    Badge,
+    Box,
+    Button,
+    Container,
+    Heading,
+    ListItem,
+    UnorderedList,
+    useColorModeValue
+} from "@chakra-ui/react";
+import {ChevronLeftIcon} from "@chakra-ui/icons";
+import {Title, WorkImage} from "../../components/work";
 import Layout from "../../components/layouts/article";
-import WorkLink from "../../components/work-link";
 import {BioSkill} from "../../components/bio";
 import {Stack} from "../../components/projectStack";
 import NextLink from "next/link";
@@ -10,6 +18,8 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
+import ProjectStatusBadge from "../../components/project-status-badge";
+import DownloadCountBadge from "../../components/download-count-badge";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -56,26 +66,25 @@ const Work = () => {
                         <b>Newtify</b> — {worksTranslation[currentLocale].newtify.description}
                     </Paragraph>
                 </Section>
-                <List>
-                    <ListItem>
-                        <Meta>App Store</Meta>
-                        <WorkLink href={'https://apps.apple.com/us/app/newtify-io/id6482849312'} target="_blank">
-                            App Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Google Play Store</Meta>
-                        <WorkLink href={'https://play.google.com/store/apps/details?id=io.newtify.app'} target="_blank">
-                            Google Play Store <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                    <ListItem>
-                        <Meta>Website</Meta>
-                        <WorkLink href={'https://newtify.io/'} target="_blank">
-                            Website <ExternalLinkIcon mx={'2px'}/>
-                        </WorkLink>
-                    </ListItem>
-                </List>
+                <Section>
+                    <Heading as={'h4'} fontSize={24}>{worksTranslation[currentLocale].my_role}</Heading>
+                    <Paragraph>
+                        {worksTranslation[currentLocale].newtify.role.description}
+                    </Paragraph>
+                    <UnorderedList spacing={2} pl={4} fontSize={18}>
+                        {
+                            worksTranslation[currentLocale].newtify.role.achievements.map((achievement) => (
+                                <ListItem key={achievement}>
+                                    {achievement}
+                                </ListItem>
+                            ))
+                        }
+                    </UnorderedList>
+                </Section>
+                <Box display={'flex'} alignItems={'center'} gap={2} flexWrap={'wrap'}>
+                    <ProjectStatusBadge/>
+                    <DownloadCountBadge count={'45k+'}/>
+                </Box>
                 <Box align={'center'} my={4}>
                     <NextLink href={'/works'}>
                         <Button leftIcon={<ChevronLeftIcon/>}
