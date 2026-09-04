@@ -1,9 +1,12 @@
 import {Button, IconButton, useColorModeValue} from "@chakra-ui/react";
 import {DownloadIcon} from "@chakra-ui/icons";
 import {AnimatePresence, motion,} from "framer-motion";
+import {useSelector} from "react-redux";
+import commonTranslation from "../public/locale/common.json";
 
 
 const DownloadCvButton = ({text}) => {
+    const currentLocale = useSelector((state) => state.language.locale);
     const downloadCV = () => {
         fetch('CV.pdf').then(response => {
             response.blob().then(blob => {
@@ -25,12 +28,12 @@ const DownloadCvButton = ({text}) => {
                         initial={{y: 20, opacity: 0}} animate={{y: 0, opacity: 1}} exit={{y: 20, opacity: 0}}
                         transition={{duration: 0.2}} whileTap={{y: 20}} >
                 {
-                    text ? <Button aria-label={'Download CV'}
+                    text ? <Button aria-label={commonTranslation[currentLocale].downloadCV}
                             /* eslint-disable-next-line react-hooks/rules-of-hooks */
                                    colorScheme={useColorModeValue('purple', 'orange')}
                                    rightIcon={<DownloadIcon/>}
-                                   onClick={downloadCV}>Download CV</Button>
-                        : <IconButton aria-label={'Download CV'}
+                                   onClick={downloadCV}>{commonTranslation[currentLocale].downloadCV}</Button>
+                        : <IconButton aria-label={commonTranslation[currentLocale].downloadCV}
                             /* eslint-disable-next-line react-hooks/rules-of-hooks */
                                       colorScheme={useColorModeValue('purple', 'orange')}
                                      icon={<DownloadIcon/>}

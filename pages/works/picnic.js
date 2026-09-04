@@ -32,10 +32,10 @@ const Work = () => {
                             <BioSkill>Dart</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>BloC (Cubit)</BioSkill>
+                            <BioSkill>BLoC (Cubit)</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>dio</BioSkill>
+                            <BioSkill>Dio</BioSkill>
                         </li>
                         <li>
                             <BioSkill>flutter_gen</BioSkill>
@@ -44,7 +44,7 @@ const Work = () => {
                             <BioSkill>Clean Architecture</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>GraphQl</BioSkill>
+                            <BioSkill>GraphQL</BioSkill>
                         </li>
                         <li>
                             <BioSkill>DI</BioSkill>

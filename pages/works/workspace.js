@@ -10,6 +10,7 @@ import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
 import WorkLink from "../../components/work-link";
+import commonTranslation from "../../public/locale/common.json";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -54,7 +55,7 @@ const Work = () => {
                             <BioSkill>media_kit</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Rest API (Zulip API)</BioSkill>
+                            <BioSkill>REST API (Zulip API)</BioSkill>
                         </li>
                         <li>
                             <BioSkill>Long Polling</BioSkill>
@@ -87,7 +88,7 @@ const Work = () => {
                     <ListItem>
                         <Meta>GitHub</Meta>
                         <WorkLink href={'https://github.com/infraguys/genesis_workspace'} target="_blank">
-                            Source Repository <ExternalLinkIcon mx={'2px'}/>
+                            {commonTranslation[currentLocale].sourceRepository} <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                 </List>

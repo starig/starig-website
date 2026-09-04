@@ -29,7 +29,7 @@ const Work = () => {
                             <BioSkill>React 18</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Next</BioSkill>
+                            <BioSkill>Next.js</BioSkill>
                         </li>
                         <li>
                             <BioSkill>Material UI</BioSkill>

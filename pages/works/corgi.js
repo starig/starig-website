@@ -10,6 +10,7 @@ import Paragraph from "../../components/paragraph";
 import Section from "../../components/section";
 import worksTranslation from './../../public/locale/works.json';
 import {useSelector} from "react-redux";
+import commonTranslation from "../../public/locale/common.json";
 
 const Work = () => {
     const currentLocale = useSelector((state) => state.language.locale);
@@ -31,7 +32,7 @@ const Work = () => {
                             <BioSkill>TypeScript</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>Rest API</BioSkill>
+                            <BioSkill>REST API</BioSkill>
                         </li>
                         <li>
                             <BioSkill>Clean Architecture</BioSkill>
@@ -49,9 +50,9 @@ const Work = () => {
                 </Section>
                 <List>
                     <ListItem>
-                        <Meta>Website</Meta>
+                        <Meta>{commonTranslation[currentLocale].site}</Meta>
                         <WorkLink href={'https://www.corgifunds.com/'} target="_blank">
-                            Website <ExternalLinkIcon mx={'2px'}/>
+                            {commonTranslation[currentLocale].site} <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
                     <ListItem>

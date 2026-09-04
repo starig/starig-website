@@ -36,7 +36,7 @@ const Work = () => {
                             <BioSkill>MVVM</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>GraphQl</BioSkill>
+                            <BioSkill>GraphQL</BioSkill>
                         </li>
                         <li>
                             <BioSkill>SceneKit</BioSkill>

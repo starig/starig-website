@@ -72,7 +72,7 @@ const Navbar = props => {
                        flexGrow={1}
                        mt={{base: 4, md: 0}}
                 >
-                    <LinkItem href={'/works'} path={path}>Works</LinkItem>
+                    <LinkItem href={'/works'} path={path}>{commonTranslation[currentLocale].works}</LinkItem>
                     <WorkLink href={'https://t.me/starig'} target="_blank" path={path}>Telegram</WorkLink>
                     <WorkLink href={'https://github.com/starig'} target="_blank" path={path}>GitHub</WorkLink>
                     <WorkLink href={'https://www.linkedin.com/in/ivan-starkov-35456820a/'} target="_blank" path={path}>LinkedIn</WorkLink>
@@ -82,7 +82,7 @@ const Navbar = props => {
                         <DownloadCvButton text={true}/>
                         <Popover>
                             <PopoverTrigger>
-                                <IconButton aria-label={'Toggle theme'}
+                                <IconButton aria-label={commonTranslation[currentLocale].settings}
                                             colorScheme={useColorModeValue('purple', 'orange')}
                                             icon={<SettingsIcon/>}
                                             onClick={() => {
@@ -109,7 +109,7 @@ const Navbar = props => {
                         <DownloadCvButton text={false}/>
                         <Popover>
                             <PopoverTrigger>
-                                <IconButton aria-label={'Toggle theme'}
+                                <IconButton aria-label={commonTranslation[currentLocale].settings}
                                             colorScheme={useColorModeValue('purple', 'orange')}
                                             icon={<SettingsIcon/>}
                                             onClick={() => {
@@ -120,7 +120,7 @@ const Navbar = props => {
                                             maxWidth="200px" boxShadow="0px 4px 6px rgba(0, 0, 0, 0.4)">
                                 <PopoverHeader pt={4} fontWeight='bold' border='0'>
                                     <Flex justify={'center'}>
-                                        Settings
+                                        {commonTranslation[currentLocale].settings}
                                     </Flex>
                                 </PopoverHeader>
                                 <PopoverBody>
@@ -134,13 +134,13 @@ const Navbar = props => {
                         <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                             <Menu>
                                 <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant="outline"
-                                            aria-label="Options"/>
+                                            aria-label={commonTranslation[currentLocale].options}/>
                                 <MenuList>
                                     <NextLink href={'/'} passHref>
-                                        <MenuItem as={Link} icon={<AiFillHome/>}>Homepage</MenuItem>
+                                        <MenuItem as={Link} icon={<AiFillHome/>}>{commonTranslation[currentLocale].home}</MenuItem>
                                     </NextLink>
                                     <NextLink href={'/works'} passHref>
-                                        <MenuItem as={Link} icon={<MdOutlineWork/>}>Works</MenuItem>
+                                        <MenuItem as={Link} icon={<MdOutlineWork/>}>{commonTranslation[currentLocale].works}</MenuItem>
                                     </NextLink>
                                     <NextLink href={'https://t.me/starig'} passHref>
                                         <MenuItem as={Link} icon={<FaTelegram/>}>Telegram</MenuItem>
@@ -151,8 +151,9 @@ const Navbar = props => {
                                     <NextLink href={'https://www.linkedin.com/in/ivan-starkov-35456820a/'} passHref>
                                         <MenuItem as={Link} icon={<FaLinkedinIn/>}>LinkedIn</MenuItem>
                                     </NextLink>
-                                    <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>View
-                                        Source</MenuItem>
+                                    <MenuItem as={Link} href={'https://github.com/starig/starig-website'}>
+                                        {commonTranslation[currentLocale].viewSource}
+                                    </MenuItem>
                                 </MenuList>
                             </Menu>
                         </Box>

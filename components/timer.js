@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {TimerContainer, TimerItem, TimerLabel} from "./bio";
 import {useColorModeValue} from "@chakra-ui/react";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 const Timer = () => {
     const [timeElapsed, setTimeElapsed] = useState(0);
@@ -28,9 +28,9 @@ const Timer = () => {
 
     const getYearLabel = (num) => {
         if (isRus) {
-            if (num >= 11 && num <= 14) {
+            if (num % 100 >= 11 && num % 100 <= 14) {
                 return 'лет';
-            } else if (num % 10 === 1 && num !== 11) {
+            } else if (num % 10 === 1) {
                 return 'год';
             } else if (num % 10 >= 2 && num % 10 <= 4) {
                 return 'года';
@@ -51,9 +51,9 @@ const Timer = () => {
 
     const getDayLabel = (num) => {
         if (isRus) {
-            if (num >= 11 && num <= 14) {
+            if (num % 100 >= 11 && num % 100 <= 14) {
                 return 'дней';
-            } else if (num % 10 === 1 && num !== 11) {
+            } else if (num % 10 === 1) {
                 return 'день';
             } else if (num % 10 >= 2 && num % 10 <= 4) {
                 return 'дня';
@@ -73,9 +73,9 @@ const Timer = () => {
 
     const getHourLabel = (num) => {
         if (isRus) {
-            if (num >= 11 && num <= 14) {
+            if (num % 100 >= 11 && num % 100 <= 14) {
                 return 'часов';
-            } else if (num % 10 === 1 && num !== 11) {
+            } else if (num % 10 === 1) {
                 return 'час';
             } else if (num % 10 >= 2 && num % 10 <= 4) {
                 return 'часа';
@@ -94,7 +94,7 @@ const Timer = () => {
 
     const getMinuteLabel = (num) => {
         if (isRus) {
-            if (num >= 11 && num <= 14) {
+            if (num % 100 >= 11 && num % 100 <= 14) {
                 return 'минут';
             } else if (num % 10 === 1) {
                 return 'минута';
@@ -116,9 +116,9 @@ const Timer = () => {
 
     const getSecondLabel = (num) => {
         if (isRus) {
-            if (num >= 11 && num <= 14) {
+            if (num % 100 >= 11 && num % 100 <= 14) {
                 return 'секунд';
-            } else if (num % 10 === 1 && num !== 11) {
+            } else if (num % 10 === 1) {
                 return 'секунда';
             } else if (num % 10 >= 2 && num % 10 <= 4) {
                 return 'секунды';

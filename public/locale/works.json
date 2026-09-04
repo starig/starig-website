@@ -2,81 +2,81 @@
   "ru": {
     "portfolio": "Портфолио",
     "tech_stack": "Стек технологий:",
-    "about_project": "Про проект:",
+    "about_project": "О проекте:",
     "my_role": "Моя роль:",
     "goBack": "Вернуться назад",
     "platforms": "Платформы:",
     "workspace": {
       "subtitle": "Кроссплатформенное рабочее пространство",
-      "description": "Кросплатформенное рабочее пространство, включающее в себя: мессенджер, календарь и почту. В команде я был единственным Flutter разработчиком, полностью заложил архитектуру проекта, выбрал стек и довел приложение до стадии MVP. Приложение полноценно реализует функциональность мессенджера: Отправка сообщений, реакции, редактирование/удаление, пересылка/ответ/мульти-селект. Так же, приложение поддерживает просмотр и отправку медиа: Видео, аудио, изображения.",
+      "description": "кроссплатформенное рабочее пространство, включающее мессенджер, календарь и электронную почту. Я был единственным Flutter-разработчиком в команде: спроектировал архитектуру проекта, выбрал стек технологий и довёл приложение до стадии MVP. Приложение полностью поддерживает основные функции мессенджера: отправку сообщений, реакции, редактирование и удаление, пересылку, ответы и множественный выбор. Также приложение позволяет просматривать и отправлять медиафайлы: видео, аудио и изображения.",
       "role": [
-        "Я был единственным Flutter-разработчиком проекта и полностью самостоятельно создал приложение с нуля. Я спроектировал архитектуру на основе Clean Architecture, выбрал технический стек и организовал ключевые части приложения: навигацию, управление состоянием, внедрение зависимостей, сетевой слой и локальное хранение данных.",
-        "Я реализовал полноценный мессенджер с отправкой, редактированием и удалением сообщений, реакциями, ответами, пересылкой и множественным выбором. Также добавил работу с изображениями, видео и аудио, интегрировал Zulip API и настроил получение обновлений в реальном времени через Long Polling.",
-        "Приложение было адаптировано для iOS, Android, macOS, Windows, Linux и Web. Я отвечал за весь цикл разработки клиентской части — от первоначальной настройки проекта и технических решений до готового MVP."
+        "Я был единственным Flutter-разработчиком проекта и полностью самостоятельно создал приложение с нуля. Я спроектировал архитектуру на основе принципов Clean Architecture, выбрал технический стек и организовал ключевые части приложения: навигацию, управление состоянием, внедрение зависимостей, сетевой слой и локальное хранение данных.",
+        "Я реализовал полноценный мессенджер с отправкой, редактированием и удалением сообщений, реакциями, ответами, пересылкой и множественным выбором. Также добавил поддержку изображений, видео и аудио, интегрировал Zulip API и настроил получение обновлений в реальном времени с помощью long polling.",
+        "Приложение было адаптировано для iOS, Android, macOS, Windows, Linux и веба. Я отвечал за весь цикл разработки клиентской части — от первоначальной настройки проекта и принятия технических решений до выпуска готового MVP."
       ]
     },
     "newtify": {
       "subtitle": "Криптопроект Newtify",
-      "description": "Геймифицированный Web3 проект, который позволяет читать актуальные новости из мира криптовалюты и получать за это токены.",
+      "description": "геймифицированный Web3-проект, который позволяет читать актуальные новости из мира криптовалют и получать за это токены.",
       "role": {
-        "description": "Я присоединился к Newtify, когда приложение уже находилось в production и имело активных пользователей. Я отвечал за развитие и стабилизацию существующего Flutter-приложения, внедрение новых возможностей и устранение критических проблем.",
+        "description": "Я присоединился к Newtify, когда приложение уже использовалось активными пользователями. Я отвечал за развитие и стабилизацию существующего Flutter-приложения, внедрение новых возможностей и устранение критических проблем.",
         "achievements": [
           "Добавил локализацию на пять языков, подготовив интерфейс и контент приложения для пользователей из разных стран.",
           "Интегрировал рекламную платформу Appodeal и настроил показ рекламы. После интеграции приложение начало монетизироваться и приносить доход от рекламных размещений.",
-          "Исправил критический краш в Android-версии приложения. После выпуска исправления конверсия в успешную регистрацию выросла на 45%.",
-          "Работал с production-кодовой базой и выпускал изменения в действующее приложение, сохраняя стабильность существующей функциональности."
+          "Исправил критический сбой в Android-версии приложения. После выпуска исправления конверсия в успешную регистрацию выросла на 45%.",
+          "Работал с кодовой базой действующего продукта и выпускал обновления, сохраняя стабильность существующей функциональности."
         ]
       }
     },
     "corgi": {
       "subtitle": "Страховое приложение Corgi",
-      "description": "Агрегатор страховых компаний Corgi с интеграцией ИИ. Стартап-проект, который получил $5,000,000 на первом раунде инвестиций. С помощью этого приложения пользователи могут выбирать лучшие страховые компании для своего жилья, питомцев или сотрудников."
+      "description": "агрегатор страховых компаний с интеграцией ИИ. Этот стартап привлёк 5 000 000 долларов в первом инвестиционном раунде. С помощью приложения пользователи могут выбирать лучшие страховые компании для страхования жилья, питомцев или сотрудников."
     },
     "comet": {
       "subtitle": "Игровая платформа Comet",
-      "description": "игровая платформа с интеграцией ИИ. В этом мобильном приложении можно было посмотреть каталог созданных игр, с помощью Comet и поиграть в них. Так же, можно было кастомизировать своего персонажа, за которого пользователь играл в игры."
+      "description": "игровая платформа с интеграцией ИИ. В мобильном приложении пользователи могли просматривать каталог игр, созданных с помощью Comet, и играть в них. Также они могли настраивать внешний вид персонажа, которым управляли в играх."
     },
     "picnic": {
       "subtitle": "Приложение Picnic",
-      "description": "социальная сеть с >2 миллионами пользователей. Приложение имеет в себе ленту с постами (видео, мемы, опросы, текстовые посты), созданными пользователями. Так же, в приложении присутствуют сообщества по интересам, в которых можно публиковать тематический контент и заводить новых друзей."
+      "description": "социальная сеть с более чем 2 миллионами пользователей. В приложении есть лента с пользовательскими публикациями: видео, мемами, опросами и текстовыми постами. Также в нём есть сообщества по интересам, где пользователи могут публиковать тематический контент и заводить новых друзей."
     },
     "digitalUb": {
-      "subtitle": "Приложение для столици Монголии",
-      "description": "комплексное приложение для жителей столицы. Информационно-технологическое решение, интегрирующее все остальные системы столицы и обеспечивающее полноценную связь государства и граждан в режиме реального времени."
+      "subtitle": "Приложение для столицы Монголии",
+      "description": "комплексное приложение для жителей столицы. Это информационно-технологическое решение, которое объединяет другие городские системы и обеспечивает связь государства и граждан в режиме реального времени."
     },
     "digitalProvince": {
       "subtitle": "Приложение для провинций Монголии",
-      "description": "это ряд мобильных сервисов для монгольсих провинций. В каждой провинции будет платформа, которая содержит множество сервисов и функций для упрощения удовлетворения повседневных потребностей."
+      "description": "ряд мобильных сервисов для провинций Монголии. В каждой провинции предусмотрена платформа с множеством сервисов и функций, которые помогают решать повседневные задачи."
     },
     "chestAi": {
-      "subtitle": "Приложение для мед. работников.",
-      "description": "это первый в Монголии продукт на основе искусственного интеллекта для обнаружения патологических изменений в рентгеновских изображениях грудной клетки на основе данных рентгенографии грудной клетки в Монголии."
+      "subtitle": "Приложение для медицинских работников",
+      "description": "первый в Монголии продукт на основе искусственного интеллекта для обнаружения патологических изменений на рентгеновских снимках грудной клетки, разработанный с использованием местных рентгенографических данных."
     }
   },
   "en": {
     "portfolio": "Portfolio",
-    "tech_stack": "Tech Stack:",
+    "tech_stack": "Technology Stack:",
     "about_project": "About the Project:",
     "my_role": "My Role:",
-    "goBack": "Go back",
+    "goBack": "Go Back",
     "platforms": "Platforms:",
     "workspace": {
-      "subtitle": "Cross-Platform Workspace Solution",
-      "description": "A cross-platform workspace that includes a messenger, calendar, and mail. I was the sole Flutter developer on the team, fully responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application fully implements core messaging functionality: sending messages, reactions, editing/deleting, forwarding/replying/multi-select. It also supports viewing and sending media, including video, audio, and images.",
+      "subtitle": "Cross-Platform Workspace",
+      "description": "a cross-platform workspace that includes a messenger, calendar, and email. I was the sole Flutter developer on the team, responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application supports core messaging features: sending, editing, and deleting messages; reactions; forwarding; replies; and multi-select. It also supports viewing and sending media, including video, audio, and images.",
       "role": [
-        "I was the project’s sole Flutter developer and independently built the application from the ground up. I designed its Clean Architecture foundation, selected the technology stack, and implemented the core application infrastructure, including navigation, state management, dependency injection, networking, and local data storage.",
-        "I developed a full-featured messenger with message sending, editing and deletion, reactions, replies, forwarding, and multi-select functionality. I also implemented image, video, and audio support, integrated the Zulip API, and configured real-time updates using Long Polling.",
-        "The application was adapted for iOS, Android, macOS, Windows, Linux, and Web. I was responsible for the entire client-side development lifecycle—from the initial project setup and technical decisions to delivering a working MVP."
+        "I was the project’s sole Flutter developer and independently built the application from the ground up. I designed the application architecture following Clean Architecture principles, selected the technology stack, and implemented the core infrastructure, including navigation, state management, dependency injection, networking, and local data storage.",
+        "I developed a full-featured messenger with message sending, editing and deletion, reactions, replies, forwarding, and multi-select functionality. I also implemented support for images, video, and audio, integrated the Zulip API, and configured real-time updates using long polling.",
+        "The application was adapted for iOS, Android, macOS, Windows, Linux, and the web. I was responsible for the entire client-side development lifecycle—from the initial project setup and technical decisions to delivering a working MVP."
       ]
     },
     "newtify": {
       "subtitle": "Newtify Crypto Project",
-      "description": "A gamified Web3 project that allows you to read the latest cryptocurrency news and earn tokens for it.",
+      "description": "a gamified Web3 project that allows users to read the latest cryptocurrency news and earn tokens.",
       "role": {
-        "description": "I joined Newtify when the application was already in production and had active users. I was responsible for developing and stabilizing the existing Flutter application, introducing new capabilities, and resolving critical issues.",
+        "description": "I joined Newtify when the application was already in production and had active users. I was responsible for the continued development and stabilization of the existing Flutter application, introducing new capabilities, and resolving critical issues.",
         "achievements": [
-          "Added localization for five languages, preparing the application’s interface and content for users across different countries.",
-          "Integrated the Appodeal advertising platform and configured ad delivery. Following the integration, the application began generating revenue through advertising.",
+          "Added localization for five languages, preparing the application’s interface and content for users in different countries.",
+          "Integrated the Appodeal advertising platform and configured ad delivery. Following the integration, the application began generating advertising revenue.",
           "Fixed a critical crash in the Android version of the application. After the fix was released, the successful registration conversion rate increased by 45%.",
           "Worked with a production codebase and delivered updates to the live application while maintaining the stability of existing functionality."
         ]
@@ -84,31 +84,31 @@
     },
     "corgi": {
       "subtitle": "Corgi Insurance Application",
-      "description": "Corgi is an aggregator of insurance companies with AI integration. This startup project raised $5,000,000 during the first round of investments. With this application, users can select the best insurance companies for their homes, pets, or employees."
+      "description": "an insurance aggregator with AI integration. This startup raised $5,000,000 in its first investment round. The application helps users select the best insurance providers for their homes, pets, or employees."
     },
     "tadpole": {
       "subtitle": "AWS Optimization — Tadpole",
-      "description": "A system that helps businesses optimize AWS costs. The application is a dashboard where users can connect their AWS account. It analyzes expenses and the resources required for tasks and provides recommendations for cost optimization."
+      "description": "a system that helps businesses optimize AWS costs. The application provides a dashboard where users can connect their AWS accounts. It analyzes expenses and resource usage and provides cost-optimization recommendations."
     },
     "comet": {
       "subtitle": "Comet Gaming Platform",
-      "description": "A gaming platform integrated with AI. In this mobile application, users can browse a catalog of games created with Comet and play them. Additionally, they can customize their character, which they use to play the games."
+      "description": "a gaming platform with AI integration. In the mobile application, users could browse and play a catalog of games created with Comet. They could also customize the characters they controlled in the games."
     },
     "picnic": {
-      "subtitle": "Picnic application",
-      "description": "a social network with over 2 million users. The app features a feed of user-generated posts including videos, memes, polls, and text-based posts. Additionally, the app includes interest-based communities where users can share thematic content and make new friends."
+      "subtitle": "Picnic Application",
+      "description": "a social network with more than 2 million users. The app features a feed of user-generated posts, including videos, memes, polls, and text posts. It also includes interest-based communities where users can share topic-specific content and make new friends."
     },
     "digitalUb": {
-      "subtitle": "An app for the capital city of Mongolia",
-      "description": "a comprehensive application for the residents of the capital city. It is an information technology solution that integrates all other systems of the capital and ensures real-time communication between the government and citizens."
+      "subtitle": "An App for Mongolia’s Capital",
+      "description": "a comprehensive application for residents of the capital. This information technology solution integrates the capital’s other systems and enables real-time communication between the government and citizens."
     },
     "digitalProvince": {
-      "subtitle": "An app for provinces on Mongolia",
-      "description": "a series of mobile services for Mongolian provinces. Each province will have a platform that contains multiple services and functions to simplify the satisfaction of everyday needs."
+      "subtitle": "An App for Mongolia’s Provinces",
+      "description": "a collection of mobile services for Mongolia’s provinces. Each province has a platform with multiple services and features designed to make everyday tasks easier."
     },
     "chestAi": {
-      "subtitle": "An app for medical usages in Mongolia",
-      "description": "the first product in Mongolia based on artificial intelligence for detecting pathological changes in chest X-ray images using chest X-ray data in Mongolia."
+      "subtitle": "An App for Healthcare Professionals",
+      "description": "Mongolia’s first artificial intelligence product for detecting pathological changes in chest X-ray images, developed using local radiographic data."
     }
   }
 }

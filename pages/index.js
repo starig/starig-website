@@ -59,7 +59,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             {homeTranslation[currentLocale].name}
                         </Heading>
-                        <p>Senior Mobile Developer</p>
+                        <p>{homeTranslation[currentLocale].job_title}</p>
                         <Email>
                             <ContactLink href={'mailto:starkovivan3@gmail.com'}>
                                 starkovivan3@gmail.com <EmailIcon ml={1}/></ContactLink>
@@ -103,7 +103,7 @@ const Page = () => {
                         <BioYear>{homeTranslation[currentLocale].at17yo}</BioYear>
                         <BioText>
                             {homeTranslation[currentLocale].at17yo_1}<BioSkill>Figma</BioSkill>/<BioSkill>Photoshop</BioSkill>/<BioSkill>Adobe
-                            Xd</BioSkill>.
+                            XD</BioSkill>.
                         </BioText>
                     </BioSection>
                     <BioSection>
@@ -116,10 +116,10 @@ const Page = () => {
                         <BioText>
                             <SkillsList>
                                 <li><BioSkill>TypeScript</BioSkill></li>
-                                <li><BioSkill>Next</BioSkill></li>
+                                <li><BioSkill>Next.js</BioSkill></li>
                                 <li><BioSkill>React</BioSkill></li>
-                                <li><BioSkill>Redux-Toolkit</BioSkill></li>
-                                <li><BioSkill>React-Native</BioSkill></li>
+                                <li><BioSkill>Redux Toolkit</BioSkill></li>
+                                <li><BioSkill>React Native</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>
@@ -134,11 +134,11 @@ const Page = () => {
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
-                                <li><BioSkill>BloC</BioSkill></li>
+                                <li><BioSkill>BLoC</BioSkill></li>
                                 <li><BioSkill>Cubit</BioSkill></li>
-                                <li><BioSkill>React-Native</BioSkill></li>
+                                <li><BioSkill>React Native</BioSkill></li>
                                 <li><BioSkill>TypeScript</BioSkill></li>
-                                <li><BioSkill>Redux-Toolkit</BioSkill></li>
+                                <li><BioSkill>Redux Toolkit</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>
@@ -173,7 +173,7 @@ const Page = () => {
                             <BioPlatform>Web</BioPlatform>{", "}
                             <BioPlatform>macOS</BioPlatform>{", "}
                             <BioPlatform>Linux</BioPlatform>{", "}
-                            <BioPlatform>Windows</BioPlatform>
+                            <BioPlatform>Windows</BioPlatform>.
                         </BioText>
 
                         <BioText> {homeTranslation[currentLocale].currently_4}</BioText>
@@ -181,9 +181,9 @@ const Page = () => {
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>
                                 <li><BioSkill>Flutter</BioSkill></li>
-                                <li><BioSkill>BloC</BioSkill></li>
+                                <li><BioSkill>BLoC</BioSkill></li>
                                 <li><BioSkill>Cubit</BioSkill></li>
-                                <li><BioSkill>REST Api</BioSkill></li>
+                                <li><BioSkill>REST API</BioSkill></li>
                                 <li><BioSkill>Clean Architecture</BioSkill></li>
                                 <li><BioSkill>DI</BioSkill></li>
                                 <li><BioSkill>flutter_gen</BioSkill></li>

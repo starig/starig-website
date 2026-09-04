@@ -41,7 +41,7 @@ const Work = () => {
                             <BioSkill>Flutter</BioSkill>
                         </li>
                         <li>
-                            <BioSkill>BloC</BioSkill>
+                            <BioSkill>BLoC</BioSkill>
                         </li>
                         <li>
                             <BioSkill>Retrofit</BioSkill>

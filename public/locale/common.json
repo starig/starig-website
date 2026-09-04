@@ -5,14 +5,40 @@
     "downloads": "скачиваний",
     "site": "Сайт",
     "projectClosed": "Проект закрыт",
-    "settings": "Настройки"
+    "settings": "Настройки",
+    "home": "Главная",
+    "works": "Работы",
+    "viewSource": "Исходный код",
+    "downloadCV": "Скачать резюме",
+    "toggleLanguage": "Переключить язык",
+    "toggleTheme": "Переключить тему",
+    "options": "Меню",
+    "notFoundTitle": "Страница не найдена",
+    "notFoundDescription": "Страница, на которую вы пытаетесь перейти, не существует.",
+    "backHome": "Вернуться на главную",
+    "sourceRepository": "Репозиторий с исходным кодом",
+    "seoTitle": "Иван Старков — портфолио",
+    "seoDescription": "Иван Старков — мобильный и фронтенд-разработчик. Портфолио, опыт работы и проекты."
   },
   "en": {
     "and": "and",
     "demo": "Demo",
     "downloads": "downloads",
-    "site": "Site",
+    "site": "Website",
     "projectClosed": "Project closed",
-    "settings": "Settings"
+    "settings": "Settings",
+    "home": "Home",
+    "works": "Work",
+    "viewSource": "View source",
+    "downloadCV": "Download CV",
+    "toggleLanguage": "Switch language",
+    "toggleTheme": "Toggle theme",
+    "options": "Menu",
+    "notFoundTitle": "Page Not Found",
+    "notFoundDescription": "The page you are trying to open does not exist.",
+    "backHome": "Back to Home",
+    "sourceRepository": "Source repository",
+    "seoTitle": "Ivan Starkov — Portfolio",
+    "seoDescription": "Ivan Starkov is a mobile and frontend developer. Explore his portfolio, professional experience, and projects."
   }
 }

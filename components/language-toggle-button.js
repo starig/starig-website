@@ -3,6 +3,7 @@ import {AnimatePresence, motion,} from "framer-motion";
 import Flag from "react-world-flags";
 import {useDispatch, useSelector} from "react-redux";
 import {setLanguage} from "../state/language/languageSlice";
+import commonTranslation from "../public/locale/common.json";
 
 
 const LanguageToggleButton = () => {
@@ -16,7 +17,7 @@ const LanguageToggleButton = () => {
 
     return (
         <AnimatePresence exitBeforeEnter initial={false}>
-            <Button aria-label={'Toggle language'}
+            <Button aria-label={commonTranslation[currentLocale].toggleLanguage}
                     colorScheme={useColorModeValue('purple', 'orange')}
                     width={'40px'}
                     height={'40px'}

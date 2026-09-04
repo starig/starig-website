@@ -72,7 +72,7 @@ const Works = () => {
             skills: [
                 'Flutter,',
                 'Dart,',
-                'BloC',
+                'BLoC',
             ]
         },
         {
@@ -83,7 +83,7 @@ const Works = () => {
             skills: [
                 'Flutter,',
                 'Dart,',
-                'BloC',
+                'BLoC',
             ]
         },
         {
@@ -94,7 +94,7 @@ const Works = () => {
             skills: [
                 'Flutter,',
                 'Dart,',
-                'BloC',
+                'BLoC',
             ]
         },
         {
@@ -105,7 +105,7 @@ const Works = () => {
             desc: worksTranslation[currentLocale].chestAi.subtitle,
             skills: [
                 'React,',
-                'Next,',
+                'Next.js,',
                 'MUI',
             ]
         }
