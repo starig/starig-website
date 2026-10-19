@@ -59,7 +59,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             {homeTranslation[currentLocale].name}
                         </Heading>
-                        <p>{homeTranslation[currentLocale].job_title}</p>
+                        <p style={{fontWeight: 500}}>Mobile Tech Lead</p>
                         <Email>
                             <ContactLink href={'mailto:starkovivan3@gmail.com'}>
                                 starkovivan3@gmail.com <EmailIcon ml={1}/></ContactLink>
@@ -162,12 +162,12 @@ const Page = () => {
                         </BioText>
                     </BioSection>
                     <BioSection>
-                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
-                        <BioText>{homeTranslation[currentLocale].currently_1} <ICTGroup href={'https://genesis-corporation.ru/'} target="_blank">
+                        <BioYear>{homeTranslation[currentLocale].genesis_dates}</BioYear>
+                        <BioText>{homeTranslation[currentLocale].genesis_1} <ICTGroup href={'https://genesis-corporation.ru/'} target="_blank">
                             Genesis
-                        </ICTGroup> {homeTranslation[currentLocale].currently_2}</BioText>
+                        </ICTGroup> {homeTranslation[currentLocale].genesis_2}</BioText>
                         <BioText>
-                            {homeTranslation[currentLocale].currently_3}
+                            {homeTranslation[currentLocale].genesis_3}
                             <BioPlatform>Android</BioPlatform>{", "}
                             <BioPlatform>iOS</BioPlatform>{", "}
                             <BioPlatform>Web</BioPlatform>{", "}
@@ -176,7 +176,7 @@ const Page = () => {
                             <BioPlatform>Windows</BioPlatform>.
                         </BioText>
 
-                        <BioText> {homeTranslation[currentLocale].currently_4}</BioText>
+                        <BioText> {homeTranslation[currentLocale].genesis_4}</BioText>
                         <BioText>
                             <SkillsList>
                                 <li><BioSkill>Dart</BioSkill></li>
@@ -187,6 +187,32 @@ const Page = () => {
                                 <li><BioSkill>Clean Architecture</BioSkill></li>
                                 <li><BioSkill>DI</BioSkill></li>
                                 <li><BioSkill>flutter_gen</BioSkill></li>
+                            </SkillsList>
+                        </BioText>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
+                        <BioText>
+                            {homeTranslation[currentLocale].currently_1}
+                            <NextLink href={'/works/sporta'} passHref>
+                                <ICTGroup>{homeTranslation[currentLocale].currently_project}</ICTGroup>
+                            </NextLink>
+                            {homeTranslation[currentLocale].currently_2}
+                        </BioText>
+                        <BioText>
+                            {homeTranslation[currentLocale].currently_3}
+                            <BioPlatform>iOS</BioPlatform>{", "}
+                            <BioPlatform>Android</BioPlatform>.
+                        </BioText>
+                        <BioText>{homeTranslation[currentLocale].currently_4}</BioText>
+                        <BioText>
+                            <SkillsList>
+                                <li><BioSkill>Dart</BioSkill></li>
+                                <li><BioSkill>Flutter</BioSkill></li>
+                                <li><BioSkill>Bloc</BioSkill></li>
+                                <li><BioSkill>Cubit</BioSkill></li>
+                                <li><BioSkill>WebSocket</BioSkill></li>
+                                <li><BioSkill>Clean Architecture</BioSkill></li>
                             </SkillsList>
                         </BioText>
                     </BioSection>
