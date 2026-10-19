@@ -8,7 +8,7 @@ import commonTranslation from "../public/locale/common.json";
 const DownloadCvButton = ({text}) => {
     const currentLocale = useSelector((state) => state.language.locale);
     const downloadCV = () => {
-        fetch('CV.pdf').then(response => {
+        fetch('/CV.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
