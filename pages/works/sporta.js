@@ -74,7 +74,7 @@ const Work = () => {
                     </ListItem>
                     <ListItem>
                         <Meta>iOS</Meta>
-                        <WorkLink href={'https://apps.apple.com/us/app/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0-%D0%BC%D0%B0%D1%82%D1%87%D0%B8-%D0%B8-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/id6801591972'} target="_blank" rel="noopener noreferrer">
+                        <WorkLink href={'https://apps.apple.com/rs/app/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0-%D0%BC%D0%B0%D1%82%D1%87%D0%B8-%D0%B8-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/id6801591972'} target="_blank" rel="noopener noreferrer">
                             App Store <ExternalLinkIcon mx={'2px'}/>
                         </WorkLink>
                     </ListItem>
