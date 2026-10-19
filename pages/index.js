@@ -194,7 +194,7 @@ const Page = () => {
                         <BioYear>{homeTranslation[currentLocale].currently}</BioYear>
                         <BioText>
                             {homeTranslation[currentLocale].currently_1}
-                            <NextLink href={'/works/sporta'} passHref>
+                            <NextLink href={{pathname: '/works/sporta'}} passHref>
                                 <ICTGroup>{homeTranslation[currentLocale].currently_project}</ICTGroup>
                             </NextLink>
                             {homeTranslation[currentLocale].currently_2}
