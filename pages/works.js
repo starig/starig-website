@@ -9,6 +9,7 @@ import cometThumbnail from '../public/images/comet.png';
 import corgiThumbnail from '../public/images/corgi.png';
 import newtifyThumbnail from '../public/images/newtify.png';
 import workspaceThumbnail  from '../public/images/workspace.png';
+import sportaThumbnail from '../public/images/sporta.png';
 import {BioSkill} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {useSelector} from "react-redux";
@@ -20,6 +21,18 @@ const Works = () => {
     const currentLocale = useSelector((state) => state.language.locale);
 
     const works = [
+        {
+            id: 'sporta',
+            title: worksTranslation[currentLocale].sporta.title,
+            productUrl: 'https://app.sporta.ru/',
+            thumbnail: sportaThumbnail,
+            desc: worksTranslation[currentLocale].sporta.subtitle,
+            skills: [
+                'Flutter,',
+                'Dart,',
+                'BLoC'
+            ]
+        },
         {
             id: 'workspace',
             title: 'Workspace',

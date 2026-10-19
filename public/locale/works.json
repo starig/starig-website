@@ -6,6 +6,18 @@
     "my_role": "Моя роль:",
     "goBack": "Вернуться назад",
     "platforms": "Платформы:",
+    "sporta": {
+      "title": "Спорта",
+      "subtitle": "Новости, видео и результаты матчей для болельщиков",
+      "coverAlt": "Приложение «Спорта»: персональная лента спортивных новостей на iPhone",
+      "description": "мобильное приложение для спортивных болельщиков, которое объединяет новости, видео, расписание матчей и результаты в реальном времени. Пользователи выбирают любимые команды и лиги, чтобы получать персональную ленту и следить за тем, что интересно именно им.",
+      "details": "В приложении можно изучать статистику матчей, турнирные таблицы и сетки плей-офф, читать материалы и смотреть видео. Спорта собирает всё это в одном месте, помогая оставаться в курсе событий — от главных новостей до выступлений любимой команды.",
+      "role": [
+        "Я руководил полным циклом разработки Flutter-приложения — от проектирования архитектуры до публикации в App Store и Google Play менее чем за шесть месяцев. Полностью отвечал за архитектуру мобильной клиентской части, технические решения и выпуск приложения, а также координировал задачи команды из двух Flutter-разработчиков.",
+        "Спроектировал и реализовал масштабируемую архитектуру функциональных модулей с чётким разделением слоёв данных, бизнес-логики и представления. Интегрировал REST API, обновления в реальном времени через WebSocket и push-уведомления, реализовал сложные интерфейсы для отображения спортивного контента.",
+        "Работал совместно с бэкенд-разработчиками и представителями продуктовой команды: уточнял требования и переводил их в технические решения."
+      ]
+    },
     "workspace": {
       "subtitle": "Кроссплатформенное рабочее пространство",
       "description": "кроссплатформенное рабочее пространство, включающее мессенджер, календарь и электронную почту. Я был единственным Flutter-разработчиком в команде: спроектировал архитектуру проекта, выбрал стек технологий и довёл приложение до стадии MVP. Приложение полностью поддерживает основные функции мессенджера: отправку сообщений, реакции, редактирование и удаление, пересылку, ответы и множественный выбор. Также приложение позволяет просматривать и отправлять медиафайлы: видео, аудио и изображения.",
@@ -60,6 +72,18 @@
     "my_role": "My Role:",
     "goBack": "Go Back",
     "platforms": "Platforms:",
+    "sporta": {
+      "title": "Sporta",
+      "subtitle": "News, videos, and live scores for sports fans",
+      "coverAlt": "Sporta app: a personalized sports news feed on iPhone",
+      "description": "a mobile app for sports fans that brings together news, videos, match schedules, and live scores. Users select their favorite teams and leagues to get a personalized feed and follow what matters to them.",
+      "details": "The app lets users explore match statistics, league standings, and playoff brackets, read articles, and watch videos. Sporta brings it all together in one place, helping fans keep up with everything from the latest headlines to their favorite team’s performance.",
+      "role": [
+        "I led the end-to-end development of the Flutter application, from the initial architecture to production releases on the App Store and Google Play in under six months. I took full ownership of the mobile frontend architecture, technical decisions, and engineering delivery, and coordinated development tasks across a two-engineer Flutter team.",
+        "I designed and implemented a scalable feature architecture with a clear separation between data, domain, and presentation layers. I integrated REST APIs, real-time updates via WebSocket, and push notifications, and built complex interfaces for sports content.",
+        "I collaborated with backend engineers and product stakeholders to clarify requirements and translate them into technical solutions."
+      ]
+    },
     "workspace": {
       "subtitle": "Cross-Platform Workspace",
       "description": "a cross-platform workspace that includes a messenger, calendar, and email. I was the sole Flutter developer on the team, responsible for designing the architecture, selecting the technology stack, and bringing the application to the MVP stage. The application supports core messaging features: sending, editing, and deleting messages; reactions; forwarding; replies; and multi-select. It also supports viewing and sending media, including video, audio, and images.",
